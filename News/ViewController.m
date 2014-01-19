@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "NewTableCell.h"
 #import "PageDatas.h"
+#import "NewDetailController.h"
 
 @interface ViewController ()
 
@@ -24,10 +25,6 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    UINib *nib = [UINib nibWithNibName:NewTableCellIdentifier bundle:nil];
-    [self.tableView registerNib:nib forCellReuseIdentifier:NewTableCellIdentifier];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,13 +36,14 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [_datas.data count];
+    return [_datas.data count]+10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NewTableCell *cell = [tableView dequeueReusableCellWithIdentifier:NewTableCellIdentifier];
-    
+    cell.textLabel.text = @"sss";
+    cell.detailTextLabel.text = @"detailLbale";
     return cell;
 }
 
@@ -59,4 +57,14 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"NewDetailController"]) {
+        New *news = [[New alloc] init];
+        news.pickurl = @"asdfasdf";
+        NewDetailController *newController = segue.destinationViewController;
+        newController.news = news;
+    }
+}
 @end

@@ -23,6 +23,8 @@
     Reachability *hostReach = [Reachability reachabilityWithHostName:@"www.baidu.com"];
     [hostReach startNotifier];
     
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"bar_bg@2x"] forBarMetrics:UIBarMetricsDefault];
+    
     return YES;
 }
 							
