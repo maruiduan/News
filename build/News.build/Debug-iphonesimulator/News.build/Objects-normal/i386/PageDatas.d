@@ -1,4 +1,3 @@
-dependencies: \
-  /Users/maruiduan/Documents/github/News/News/Helper/PageDatas.m \
-  /Users/maruiduan/Documents/github/News/News/Helper/PageDatas.h \
-  /Users/maruiduan/Documents/github/News/News/Helper/IParse.h
+dependencies: /Users/maruiduan/github/News/News/Helper/PageDatas.m \
+  /Users/maruiduan/github/News/News/Helper/PageDatas.h \
+  /Users/maruiduan/github/News/News/Helper/IParse.h

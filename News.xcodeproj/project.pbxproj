@@ -50,6 +50,8 @@
 		CC750CCE188AE893004E1641 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CC750CC7188AE893004E1641 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CC750CCF188AE893004E1641 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = CC750CCB188AE893004E1641 /* UIScrollView+SVInfiniteScrolling.m */; };
 		CC750CD0188AE893004E1641 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = CC750CCD188AE893004E1641 /* UIScrollView+SVPullToRefresh.m */; };
+		CC8A35B2188CC99A005CBB37 /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8A35B1188CC99A005CBB37 /* NSString+JSON.m */; };
+		CC8A35B9188CCCBF005CBB37 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8A35B8188CCCBF005CBB37 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CC9BF0CD188C0B9C005C444A /* NewDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9BF0CC188C0B9C005C444A /* NewDetailController.m */; };
 		CCBF26E8188C1D3A008D332F /* ALAirplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBF26D0188C1D39008D332F /* ALAirplayView.m */; };
 		CCBF26E9188C1D3A008D332F /* ALButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBF26D2188C1D39008D332F /* ALButton.m */; };
@@ -167,6 +169,10 @@
 		CC750CCB188AE893004E1641 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
 		CC750CCC188AE893004E1641 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
 		CC750CCD188AE893004E1641 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
+		CC8A35B0188CC99A005CBB37 /* NSString+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSON.h"; sourceTree = "<group>"; };
+		CC8A35B1188CC99A005CBB37 /* NSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSON.m"; sourceTree = "<group>"; };
+		CC8A35B7188CCCBF005CBB37 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		CC8A35B8188CCCBF005CBB37 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		CC9BF0CB188C0B9C005C444A /* NewDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDetailController.h; sourceTree = "<group>"; };
 		CC9BF0CC188C0B9C005C444A /* NewDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewDetailController.m; sourceTree = "<group>"; };
 		CCBF26CF188C1D39008D332F /* ALAirplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAirplayView.h; sourceTree = "<group>"; };
@@ -336,6 +342,7 @@
 		CC617FE1188A765500370F27 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				CC8A35B6188CCCBF005CBB37 /* JSONKit */,
 				CCBF26CE188C1D39008D332F /* ALMoviePlayerController */,
 				CC750CC5188AE893004E1641 /* Reachability */,
 				CC750CC8188AE893004E1641 /* SVPullRresh */,
@@ -363,6 +370,8 @@
 				CC618036188A8ACE00370F27 /* IParse.h */,
 				CC4E803B188AA1210091FAD6 /* HTTPClient.h */,
 				CC4E803C188AA1210091FAD6 /* HTTPClient.m */,
+				CC8A35B0188CC99A005CBB37 /* NSString+JSON.h */,
+				CC8A35B1188CC99A005CBB37 /* NSString+JSON.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -448,6 +457,15 @@
 				CC750CCD188AE893004E1641 /* UIScrollView+SVPullToRefresh.m */,
 			);
 			path = SVPullRresh;
+			sourceTree = "<group>";
+		};
+		CC8A35B6188CCCBF005CBB37 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				CC8A35B7188CCCBF005CBB37 /* JSONKit.h */,
+				CC8A35B8188CCCBF005CBB37 /* JSONKit.m */,
+			);
+			path = JSONKit;
 			sourceTree = "<group>";
 		};
 		CCBF26CE188C1D39008D332F /* ALMoviePlayerController */ = {
@@ -604,6 +622,7 @@
 			files = (
 				CC750CCE188AE893004E1641 /* Reachability.m in Sources */,
 				CCBF26EB188C1D3A008D332F /* ALMoviePlayerControls.m in Sources */,
+				CC8A35B9188CCCBF005CBB37 /* JSONKit.m in Sources */,
 				CC617FFA188A775200370F27 /* AFImageRequestOperation.m in Sources */,
 				CC617FC0188A739200370F27 /* ViewController.m in Sources */,
 				CC4E803D188AA1210091FAD6 /* HTTPClient.m in Sources */,
@@ -632,6 +651,7 @@
 				CC617FF9188A775200370F27 /* AFHTTPRequestOperation.m in Sources */,
 				CC4E8040188AA70B0091FAD6 /* NewTableCell.m in Sources */,
 				CC61801F188A7CFF00370F27 /* MKAnnotationView+WebCache.m in Sources */,
+				CC8A35B2188CC99A005CBB37 /* NSString+JSON.m in Sources */,
 				CC750CD0188AE893004E1641 /* UIScrollView+SVPullToRefresh.m in Sources */,
 				CC617FB6188A739200370F27 /* main.m in Sources */,
 				CC617FF8188A775200370F27 /* AFHTTPClient.m in Sources */,

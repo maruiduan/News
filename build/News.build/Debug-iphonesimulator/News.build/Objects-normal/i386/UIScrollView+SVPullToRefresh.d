@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/maruiduan/Documents/github/News/News/Vendor/SVPullRresh/UIScrollView+SVPullToRefresh.m \
-  /Users/maruiduan/Documents/github/News/News/Vendor/SVPullRresh/UIScrollView+SVPullToRefresh.h
+  /Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVPullToRefresh.m \
+  /Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVPullToRefresh.h

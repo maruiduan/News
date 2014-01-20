@@ -1,2 +1,2 @@
-dependencies: /Users/maruiduan/Documents/github/News/News/main.m \
-  /Users/maruiduan/Documents/github/News/News/AppDelegate.h
+dependencies: /Users/maruiduan/github/News/News/main.m \
+  /Users/maruiduan/github/News/News/AppDelegate.h
