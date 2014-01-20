@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVInfiniteScrolling.m \
-  /Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVInfiniteScrolling.h
+  /Users/maruiduan/Documents/github/News/News/Vendor/SVPullRresh/UIScrollView+SVInfiniteScrolling.m \
+  /Users/maruiduan/Documents/github/News/News/Vendor/SVPullRresh/UIScrollView+SVInfiniteScrolling.h

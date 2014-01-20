@@ -30,6 +30,7 @@
     [datas enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
         id result = [[(id)parserClass alloc] init];
         [result parseObject:obj];
+        [dataArray addObject:result];
     }];
     pagingArray.data = dataArray;
     pagingArray.page = [json[@"pagenumber"] intValue];

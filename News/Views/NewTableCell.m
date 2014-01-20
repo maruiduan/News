@@ -7,6 +7,7 @@
 //
 
 #import "NewTableCell.h"
+#import "UIImageView+WebCache.h"
 
 @implementation NewTableCell
 
@@ -24,6 +25,14 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)setNews:(New *)news
+{
+    _news = news;
+    self.title.text = news.title;
+    self.subTitle.text = news.synopsis;
+    [self.imageView setImageWithURL:[NSURL URLWithString:news.pickurl]];
 }
 
 @end
