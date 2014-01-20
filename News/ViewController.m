@@ -10,11 +10,12 @@
 #import "NewTableCell.h"
 #import "PageDatas.h"
 #import "NewDetailController.h"
+#import "StyledPageControl.h"
 
 @interface ViewController ()
 
 @property (nonatomic, strong) PageDatas *datas;
-
+@property (nonatomic, strong) StyledPageControl *pangeControl;
 @end
 
 static NSString *NewTableCellIdentifier = @"NewTableCell";
@@ -25,6 +26,18 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    StyledPageControl *pageControl = [[StyledPageControl alloc] init];
+    [pageControl setPageControlStyle:PageControlStyleDefault];
+    [pageControl setNumberOfPages:10];
+    [pageControl setCurrentPage:5];
+    [pageControl setGapWidth:5];
+    [pageControl setDiameter:9];
+//    [pageControl setPageControlStyle:PageControlStyleThumb];
+//    [pageControl setThumbImage:[UIImage imageNamed:@"pagecontrol-thumb-normal.png"]];
+//    [pageControl setSelectedThumbImage:[UIImage imageNamed:@"pagecontrol-thumb-selected.png"]];
+//    pageControl.con
+    [self.view addSubview:pageControl];
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,7 +70,7 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-
+#pragma mark - StoryBoard Callback
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"NewDetailController"]) {

@@ -52,6 +52,7 @@
 		CC750CD0188AE893004E1641 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = CC750CCD188AE893004E1641 /* UIScrollView+SVPullToRefresh.m */; };
 		CC8A35B2188CC99A005CBB37 /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8A35B1188CC99A005CBB37 /* NSString+JSON.m */; };
 		CC8A35B9188CCCBF005CBB37 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8A35B8188CCCBF005CBB37 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC8A35BD188CFDEB005CBB37 /* StyledPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8A35BC188CFDEB005CBB37 /* StyledPageControl.m */; };
 		CC9BF0CD188C0B9C005C444A /* NewDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9BF0CC188C0B9C005C444A /* NewDetailController.m */; };
 		CCBF26E8188C1D3A008D332F /* ALAirplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBF26D0188C1D39008D332F /* ALAirplayView.m */; };
 		CCBF26E9188C1D3A008D332F /* ALButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBF26D2188C1D39008D332F /* ALButton.m */; };
@@ -173,6 +174,8 @@
 		CC8A35B1188CC99A005CBB37 /* NSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSON.m"; sourceTree = "<group>"; };
 		CC8A35B7188CCCBF005CBB37 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		CC8A35B8188CCCBF005CBB37 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		CC8A35BB188CFDEB005CBB37 /* StyledPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyledPageControl.h; sourceTree = "<group>"; };
+		CC8A35BC188CFDEB005CBB37 /* StyledPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyledPageControl.m; sourceTree = "<group>"; };
 		CC9BF0CB188C0B9C005C444A /* NewDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDetailController.h; sourceTree = "<group>"; };
 		CC9BF0CC188C0B9C005C444A /* NewDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewDetailController.m; sourceTree = "<group>"; };
 		CCBF26CF188C1D39008D332F /* ALAirplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAirplayView.h; sourceTree = "<group>"; };
@@ -342,6 +345,7 @@
 		CC617FE1188A765500370F27 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				CC8A35BA188CFDEB005CBB37 /* StylePageControl */,
 				CC8A35B6188CCCBF005CBB37 /* JSONKit */,
 				CCBF26CE188C1D39008D332F /* ALMoviePlayerController */,
 				CC750CC5188AE893004E1641 /* Reachability */,
@@ -466,6 +470,15 @@
 				CC8A35B8188CCCBF005CBB37 /* JSONKit.m */,
 			);
 			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		CC8A35BA188CFDEB005CBB37 /* StylePageControl */ = {
+			isa = PBXGroup;
+			children = (
+				CC8A35BB188CFDEB005CBB37 /* StyledPageControl.h */,
+				CC8A35BC188CFDEB005CBB37 /* StyledPageControl.m */,
+			);
+			path = StylePageControl;
 			sourceTree = "<group>";
 		};
 		CCBF26CE188C1D39008D332F /* ALMoviePlayerController */ = {
@@ -640,6 +653,7 @@
 				CC618024188A7CFF00370F27 /* SDWebImagePrefetcher.m in Sources */,
 				CC618022188A7CFF00370F27 /* SDWebImageDownloader.m in Sources */,
 				CC618029188A7F2E00370F27 /* New.m in Sources */,
+				CC8A35BD188CFDEB005CBB37 /* StyledPageControl.m in Sources */,
 				CC618000188A775200370F27 /* UIImageView+AFNetworking.m in Sources */,
 				CCBF26EA188C1D3A008D332F /* ALMoviePlayerController.m in Sources */,
 				CCBF26E9188C1D3A008D332F /* ALButton.m in Sources */,

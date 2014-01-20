@@ -25,9 +25,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <scrollView key="tableHeaderView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4My-x8-CN9">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                </scrollView>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewTableCell" textLabel="rpK-mm-9KF" detailTextLabel="dbB-GX-2Ef" style="IBUITableViewCellStyleSubtitle" id="yFQ-xl-9DH">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="85"/>
+                                        <rect key="frame" x="0.0" y="140" width="320" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yFQ-xl-9DH" id="w1T-H7-2b6">
                                             <rect key="frame" x="0.0" y="0.0" width="253" height="85"/>

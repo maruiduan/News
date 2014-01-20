@@ -10,7 +10,7 @@
 #import "AFJSONRequestOperation.h"
 #import "JSONKit.h"
 
-static NSString * const kAFAppJAVAAPIBaseURLString = @"https://alpha-api.app.net/";
+static NSString * const kAFAppJAVAAPIBaseURLString = @"http://test.12326.com:8100";
 
 @implementation HTTPClient
 
@@ -37,7 +37,7 @@ static NSString * const kAFAppJAVAAPIBaseURLString = @"https://alpha-api.app.net
 {
     NSString *para = [dict JSONString];
     NSDictionary *parameters = @{@"data":para};
-    [[HTTPClient sharedClient] postPath:@"" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [[HTTPClient sharedClient] postPath:@"/baseproject/service/httpservices.htm" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         success(operation, responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         failure(operation, error);
