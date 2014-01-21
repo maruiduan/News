@@ -70,17 +70,16 @@
     [self.moviePlayer play];
     
     //delay initial load so statusBarOrientation returns correct value
-//    double delayInSeconds = 0.3;
-//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-//        [self configureViewForOrientation:[UIApplication sharedApplication].statusBarOrientation];
-//        [UIView animateWithDuration:0.3 delay:0.0 options:0 animations:^{
-//            self.moviePlayer.view.alpha = 1.f;
-//        } completion:^(BOOL finished) {
-//            self.navigationItem.leftBarButtonItem.enabled = YES;
-//            self.navigationItem.rightBarButtonItem.enabled = YES;
-//        }];
-//    });
+    double delayInSeconds = 0.3;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [self configureViewForOrientation:[UIApplication sharedApplication].statusBarOrientation];
+        [UIView animateWithDuration:0.3 delay:0.0 options:0 animations:^{
+            self.moviePlayer.view.alpha = 1.f;
+        } completion:^(BOOL finished) {
+
+        }];
+    });
 
 	// Do any additional setup after loading the view.
 }
