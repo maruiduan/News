@@ -1,0 +1,1703 @@
+TNews
+v6
+r1
+cCheck dependencies
+cProcessPCH /var/folders/8m/bt_r_yxd1jqftknf6v2wbjb80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/News-Prefix-egamqgzlokuobygsmwnonazuwtnf/News-Prefix.pch.pch News/News-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/8m/bt_r_yxd1jqftknf6v2wbjb80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/News-Prefix-brotckdwagfrzzcjgaejfdqpmxdb/News-Prefix.pch.pch News/News-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/Reachability.o /Users/maruiduan/github/News/News/Vendor/Reachability/Reachability.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ALMoviePlayerControls.o /Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALMoviePlayerControls.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/JSONKit.o /Users/maruiduan/github/News/News/Vendor/JSONKit/JSONKit.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFImageRequestOperation.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFImageRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/HTTPClient.o /Users/maruiduan/github/News/News/Helper/HTTPClient.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.o /Users/maruiduan/github/News/News/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIImageView+WebCache.o /Users/maruiduan/github/News/News/Vendor/SDWebImage/UIImageView+WebCache.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFPropertyListRequestOperation.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFPropertyListRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDWebImageManager.o /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AppDelegate.o /Users/maruiduan/github/News/News/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/PageDatas.o /Users/maruiduan/github/News/News/Helper/PageDatas.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFURLConnectionOperation.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFURLConnectionOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/VideoController.o /Users/maruiduan/github/News/News/Controllers/VideoController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFXMLRequestOperation.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFXMLRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIScrollView+SVInfiniteScrolling.o /Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVInfiniteScrolling.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFJSONRequestOperation.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFJSONRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDWebImageDecoder.o /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageDecoder.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDWebImagePrefetcher.o /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImagePrefetcher.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDWebImageDownloader.o /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageDownloader.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/New.o /Users/maruiduan/github/News/News/Models/New.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/StyledPageControl.o /Users/maruiduan/github/News/News/Vendor/StylePageControl/StyledPageControl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIImageView+AFNetworking.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/UIImageView+AFNetworking.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ALMoviePlayerController.o /Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALMoviePlayerController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ALButton.o /Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALButton.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIButton+WebCache.o /Users/maruiduan/github/News/News/Vendor/SDWebImage/UIButton+WebCache.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewDetailController.o /Users/maruiduan/github/News/News/Controllers/NewDetailController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ALAirplayView.o /Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALAirplayView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/MBProgressHUD.o /Users/maruiduan/github/News/News/Vendor/MBProgress/MBProgressHUD.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFNetworkActivityIndicatorManager.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFNetworkActivityIndicatorManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFHTTPRequestOperation.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewTableCell.o /Users/maruiduan/github/News/News/Views/NewTableCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/MKAnnotationView+WebCache.o /Users/maruiduan/github/News/News/Vendor/SDWebImage/MKAnnotationView+WebCache.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NSString+JSON.o /Users/maruiduan/github/News/News/Helper/NSString+JSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIScrollView+SVPullToRefresh.o /Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVPullToRefresh.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/main.o /Users/maruiduan/github/News/News/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFHTTPClient.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDImageCache.o /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDImageCache.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News normal i386
+cCpResource News/Vendor/ALMoviePlayerController/Images/movieBackward@2x.png build/Debug-iphonesimulator/News.app/movieBackward@2x.png
+cCpResource News/Vendor/ALMoviePlayerController/Images/movieBackwardSelected@2x.png build/Debug-iphonesimulator/News.app/movieBackwardSelected@2x.png
+cCpResource News/Vendor/ALMoviePlayerController/Images/movieForward@2x.png build/Debug-iphonesimulator/News.app/movieForward@2x.png
+cCpResource News/Vendor/ALMoviePlayerController/Images/movieEndFullscreen@2x.png build/Debug-iphonesimulator/News.app/movieEndFullscreen@2x.png
+cCpResource News/Vendor/ALMoviePlayerController/Images/movieForwardSelected.png build/Debug-iphonesimulator/News.app/movieForwardSelected.png
+cCpResource News/Vendor/ALMoviePlayerController/Images/movieForward.png build/Debug-iphonesimulator/News.app/movieForward.png
+cCpResource News/Vendor/ALMoviePlayerController/Images/moviePlay@2x.png build/Debug-iphonesimulator/News.app/moviePlay@2x.png
+cCpResource News/Vendor/ALMoviePlayerController/Images/moviePause@2x.png build/Debug-iphonesimulator/News.app/moviePause@2x.png
+cCpResource News/Vendor/ALMoviePlayerController/Images/movieEndFullscreen.png build/Debug-iphonesimulator/News.app/movieEndFullscreen.png
+cCopyStringsFile /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/en.lproj/InfoPlist.strings News/en.lproj/InfoPlist.strings
+cCpResource News/Vendor/ALMoviePlayerController/Images/moviePlay.png build/Debug-iphonesimulator/News.app/moviePlay.png
+cCpResource News/Vendor/ALMoviePlayerController/Images/movieForwardSelected@2x.png build/Debug-iphonesimulator/News.app/movieForwardSelected@2x.png
+cCompileStoryboard /Users/maruiduan/github/News/News/Base.lproj/Main.storyboard
+cCpResource News/Vendor/ALMoviePlayerController/Images/movieFullscreen@2x.png build/Debug-iphonesimulator/News.app/movieFullscreen@2x.png
+cCpResource News/Vendor/ALMoviePlayerController/Images/movieFullscreen.png build/Debug-iphonesimulator/News.app/movieFullscreen.png
+cCpResource News/Vendor/ALMoviePlayerController/Images/movieBackwardSelected.png build/Debug-iphonesimulator/News.app/movieBackwardSelected.png
+cCpResource News/Vendor/ALMoviePlayerController/Images/movieBackward.png build/Debug-iphonesimulator/News.app/movieBackward.png
+cCpResource News/Vendor/ALMoviePlayerController/Images/moviePause.png build/Debug-iphonesimulator/News.app/moviePause.png
+cCompileAssetCatalog /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app /Users/maruiduan/github/News/News/Images.xcassets
+cProcessInfoPlistFile /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/Info.plist /Users/maruiduan/github/News/News/News-Info.plist
+cGenerateDSYMFile /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app.dSYM /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News
+cTouch /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk
+c000000005281B74F0000000000000176
+t1384232783
+s374
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/SDKSettings.plist
+c00000000526769B300000000000003B5
+t1382508979
+s949
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000526769B700000000000001A0
+t1382508983
+s416
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c00000000526769B800000000005838D0
+t1382508984
+s5781712
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c00000000526769B800000000005B82A0
+t1382508984
+s5997216
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000526769B80000000000445870
+t1382508984
+s4479088
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
+c00000000526769B80000000000355050
+t1382508984
+s3493968
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c00000000526769B800000000000EC820
+t1382508984
+s968736
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+c00000000526769B800000000002F6810
+t1382508984
+s3106832
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c00000000526769B8000000000004B000
+t1382508984
+s307200
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000526769B9000000000088C680
+t1382508985
+s8963712
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+c00000000526769B90000000000666670
+t1382508985
+s6710896
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c00000000526769B900000000002C78D0
+t1382508985
+s2914512
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+c00000000526769B9000000000070DDC0
+t1382508985
+s7396800
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c00000000526769B900000000001BA530
+t1382508985
+s1811760
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c00000000526769B90000000000037620
+t1382508985
+s226848
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000526769BA00000000004848F0
+t1382508986
+s4737264
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Security.framework/Security
+c00000000526769BA00000000001290B0
+t1382508986
+s1216688
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c00000000526769BA00000000001081B0
+t1382508986
+s1081776
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000526769BB0000000001DB9910
+t1382508987
+s31168784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+c00000000526769C100000000002B9F20
+t1382508993
+s2858784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/crt1.o
+c00000000526769C40000000000002338
+t1382508996
+s9016
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libSystem.dylib
+c00000000526769C4000000000008D300
+t1382508996
+s578304
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libobjc.dylib
+c00000000526769C4000000000038ACB0
+t1382508996
+s3714224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
+c00000000525B92A600000000000141F0
+t1381733030
+s82416
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcache_sim.dylib
+c00000000526769C40000000000013500
+t1382508996
+s79104
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+c00000000526769C40000000000033BA0
+t1382508996
+s211872
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+c00000000526769C4000000000001CFB0
+t1382508996
+s118704
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcopyfile_sim.dylib
+c00000000526769C4000000000001B2B0
+t1382508996
+s111280
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdispatch.dylib
+c00000000526769C400000000000632B0
+t1382508996
+s406192
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdyld_sim.dylib
+c00000000526769C40000000000008880
+t1382508996
+s34944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libmacho_sim.dylib
+c00000000526769C40000000000015080
+t1382508996
+s86144
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libnotify_sim.dylib
+c00000000526769C400000000000230E0
+t1382508996
+s143584
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libremovefile_sim.dylib
+c00000000526769C4000000000000E380
+t1382508996
+s58240
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_network.dylib
+c00000000526769C40000000000087200
+t1382508996
+s553472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_override.dylib
+c00000000526769C400000000000171A0
+t1382508996
+s94624
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_asl.dylib
+c00000000526769C40000000000039C10
+t1382508996
+s236560
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+c00000000526769C4000000000000B0B0
+t1382508996
+s45232
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_c.dylib
+c00000000526769C50000000000167FE0
+t1382508997
+s1474528
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+c00000000526769C400000000000106A0
+t1382508996
+s67232
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+c00000000526769C4000000000001CE40
+t1382508996
+s118336
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_info.dylib
+c00000000526769C40000000000071040
+t1382508996
+s462912
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_m.dylib
+c00000000526769C40000000000067A10
+t1382508996
+s424464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libunwind_sim.dylib
+c00000000526769C4000000000001BAD0
+t1382508996
+s113360
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libxpc.dylib
+c00000000526769C50000000000088BA0
+t1382508997
+s560032
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/include/module.map
+c00000000526769D20000000000000AC9
+t1382509010
+s2761
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.ios.a
+c00000000526769D20000000000005004
+t1382509010
+s20484
+
+N/Users/maruiduan/github/News/News/AppDelegate.m
+c0000000052DDDDFD0000000000000DA0
+t1390271997
+s3488
+
+N/Users/maruiduan/github/News/News/Base.lproj/Main.storyboard
+c0000000052DE41DA0000000000004BD9
+t1390297562
+s19417
+
+N/Users/maruiduan/github/News/News/Controllers/NewDetailController.h
+c0000000052DE347A0000000000000210
+t1390294138
+s528
+
+N/Users/maruiduan/github/News/News/Controllers/NewDetailController.m
+c0000000052DE349500000000000005BA
+t1390294165
+s1466
+
+N/Users/maruiduan/github/News/News/Controllers/VideoController.h
+c0000000052DE12200000000000000148
+t1390285344
+s328
+
+N/Users/maruiduan/github/News/News/Controllers/VideoController.m
+c0000000052DE3CB200000000000013A6
+t1390296242
+s5030
+
+N/Users/maruiduan/github/News/News/Helper/HTTPClient.h
+c0000000052DC90EC000000000000020D
+t1390186732
+s525
+
+N/Users/maruiduan/github/News/News/Helper/HTTPClient.m
+c0000000052DCD20100000000000005E5
+t1390203393
+s1509
+
+N/Users/maruiduan/github/News/News/Helper/IParse.h
+c0000000052DC90EC00000000000000EF
+t1390186732
+s239
+
+N/Users/maruiduan/github/News/News/Helper/NSString+JSON.h
+c0000000052DC954400000000000000ED
+t1390187844
+s237
+
+N/Users/maruiduan/github/News/News/Helper/NSString+JSON.m
+c0000000052DC92F100000000000001D4
+t1390187249
+s468
+
+N/Users/maruiduan/github/News/News/Helper/PageDatas.h
+c0000000052DC90EC0000000000000238
+t1390186732
+s568
+
+N/Users/maruiduan/github/News/News/Helper/PageDatas.m
+c0000000052DDDDFD00000000000004AE
+t1390271997
+s1198
+
+N/Users/maruiduan/github/News/News/Images.xcassets
+c0000000052DE0D510000000000000286
+t1390284113
+s646
+
+N/Users/maruiduan/github/News/News/Models/New.h
+c0000000052DC90EC00000000000002DE
+t1390186732
+s734
+
+N/Users/maruiduan/github/News/News/Models/New.m
+c0000000052DC90EC000000000000025F
+t1390186732
+s607
+
+N/Users/maruiduan/github/News/News/News-Info.plist
+c0000000052DC90EC00000000000004C3
+t1390186732
+s1219
+
+N/Users/maruiduan/github/News/News/News-Prefix.pch
+c0000000052DC90EC0000000000000158
+t1390186732
+s344
+
+N/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.h
+c0000000052DC90EC000000000000952F
+t1390186732
+s38191
+
+N/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.m
+c0000000052DC90EC000000000000D619
+t1390186732
+s54809
+
+N/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPRequestOperation.h
+c0000000052DC90EC0000000000001907
+t1390186732
+s6407
+
+N/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPRequestOperation.m
+c0000000052DC90EC000000000000340D
+t1390186732
+s13325
+
+N/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFImageRequestOperation.h
+c0000000052DC90EC00000000000017D7
+t1390186732
+s6103
+
+N/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFImageRequestOperation.m
+c0000000052DC90EC0000000000003135
+t1390186732
+s12597
+
+N/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFJSONRequestOperation.m
+c0000000052DC90EC00000000000018AE
+t1390186732
+s6318
+
+N/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFNetworkActivityIndicatorManager.m
+c0000000052DC90EC0000000000001654
+t1390186732
+s5716
+
+N/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFPropertyListRequestOperation.m
+c0000000052DC90EC000000000000164A
+t1390186732
+s5706
+
+N/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFURLConnectionOperation.h
+c0000000052DC90EC0000000000004A04
+t1390186732
+s18948
+
+N/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFURLConnectionOperation.m
+c0000000052DC90EC0000000000007E17
+t1390186732
+s32279
+
+N/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFXMLRequestOperation.m
+c0000000052DC90EC0000000000001944
+t1390186732
+s6468
+
+N/Users/maruiduan/github/News/News/Vendor/AFNetworking/UIImageView+AFNetworking.h
+c0000000052DC90EC000000000000152E
+t1390186732
+s5422
+
+N/Users/maruiduan/github/News/News/Vendor/AFNetworking/UIImageView+AFNetworking.m
+c0000000052DC90EC00000000000019C3
+t1390186732
+s6595
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALAirplayView.m
+c0000000052DC90EC0000000000000770
+t1390186732
+s1904
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALButton.m
+c0000000052DC90EC0000000000000619
+t1390186732
+s1561
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALMoviePlayerController.h
+c0000000052DC90EC0000000000000318
+t1390186732
+s792
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALMoviePlayerController.m
+c0000000052DC90EC0000000000002CDF
+t1390186732
+s11487
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALMoviePlayerControls.h
+c0000000052DE29C800000000000009E9
+t1390291400
+s2537
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALMoviePlayerControls.m
+c0000000052DC90EC0000000000007BC6
+t1390186732
+s31686
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/Images/movieBackward.png
+c0000000052DC90EC000000000000058E
+t1390186732
+s1422
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/Images/movieBackward@2x.png
+c0000000052DC90EC0000000000000717
+t1390186732
+s1815
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/Images/movieBackwardSelected.png
+c0000000052DC90EC0000000000000637
+t1390186732
+s1591
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/Images/movieBackwardSelected@2x.png
+c0000000052DC90EC00000000000008BE
+t1390186732
+s2238
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/Images/movieEndFullscreen.png
+c0000000052DC90EC0000000000000523
+t1390186732
+s1315
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/Images/movieEndFullscreen@2x.png
+c0000000052DC90EC00000000000005DE
+t1390186732
+s1502
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/Images/movieForward.png
+c0000000052DC90EC000000000000058F
+t1390186732
+s1423
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/Images/movieForward@2x.png
+c0000000052DC90EC0000000000000753
+t1390186732
+s1875
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/Images/movieForwardSelected.png
+c0000000052DC90EC0000000000000648
+t1390186732
+s1608
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/Images/movieForwardSelected@2x.png
+c0000000052DC90EC00000000000008E2
+t1390186732
+s2274
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/Images/movieFullscreen.png
+c0000000052DC90EC0000000000000527
+t1390186732
+s1319
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/Images/movieFullscreen@2x.png
+c0000000052DC90EC00000000000005E3
+t1390186732
+s1507
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/Images/moviePause.png
+c0000000052DC90EC0000000000000435
+t1390186732
+s1077
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/Images/moviePause@2x.png
+c0000000052DC90EC0000000000000478
+t1390186732
+s1144
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/Images/moviePlay.png
+c0000000052DC90EC00000000000005BA
+t1390186732
+s1466
+
+N/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/Images/moviePlay@2x.png
+c0000000052DC90EC000000000000069F
+t1390186732
+s1695
+
+N/Users/maruiduan/github/News/News/Vendor/JSONKit/JSONKit.h
+c000000004FFE37260000000000002DBE
+t1342060326
+s11710
+
+N/Users/maruiduan/github/News/News/Vendor/JSONKit/JSONKit.m
+c0000000052DC95A8000000000002B47D
+t1390187944
+s177277
+
+N/Users/maruiduan/github/News/News/Vendor/MBProgress/MBProgressHUD.m
+c0000000052DC90EC0000000000008115
+t1390186732
+s33045
+
+N/Users/maruiduan/github/News/News/Vendor/Reachability/Reachability.m
+c0000000052DC90EC0000000000005DB5
+t1390186732
+s23989
+
+N/Users/maruiduan/github/News/News/Vendor/SDWebImage/MKAnnotationView+WebCache.m
+c0000000052DC90EC000000000000092C
+t1390186732
+s2348
+
+N/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDImageCache.m
+c0000000052DC90EC00000000000030C8
+t1390186732
+s12488
+
+N/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDImageCacheDelegate.h
+c0000000052DC90EC0000000000000451
+t1390186732
+s1105
+
+N/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageCompat.h
+c0000000052DC90EC0000000000000921
+t1390186732
+s2337
+
+N/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageDecoder.m
+c0000000052DC90EC0000000000000D9A
+t1390186732
+s3482
+
+N/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageDownloader.m
+c0000000052DC90EC0000000000002C79
+t1390186732
+s11385
+
+N/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageDownloaderDelegate.h
+c0000000052DC90EC000000000000052C
+t1390186732
+s1324
+
+N/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageManager.h
+c0000000052DE38E8000000000000192B
+t1390295272
+s6443
+
+N/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageManager.m
+c0000000052DC90EC0000000000005360
+t1390186732
+s21344
+
+N/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageManagerDelegate.h
+c0000000052DC90EC00000000000008D1
+t1390186732
+s2257
+
+N/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImagePrefetcher.m
+c0000000052DC90EC0000000000000CD1
+t1390186732
+s3281
+
+N/Users/maruiduan/github/News/News/Vendor/SDWebImage/UIButton+WebCache.h
+c0000000052DC90EC0000000000001CD3
+t1390186732
+s7379
+
+N/Users/maruiduan/github/News/News/Vendor/SDWebImage/UIButton+WebCache.m
+c0000000052DC90EC000000000000181B
+t1390186732
+s6171
+
+N/Users/maruiduan/github/News/News/Vendor/SDWebImage/UIImageView+WebCache.h
+c0000000052DC90EC0000000000001366
+t1390186732
+s4966
+
+N/Users/maruiduan/github/News/News/Vendor/SDWebImage/UIImageView+WebCache.m
+c0000000052DC90EC0000000000000988
+t1390186732
+s2440
+
+N/Users/maruiduan/github/News/News/Vendor/SVPullRresh/SVPullToRefresh.h
+c0000000052DC90EC00000000000001BB
+t1390186732
+s443
+
+N/Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVInfiniteScrolling.h
+c0000000052DC90EC0000000000000489
+t1390186732
+s1161
+
+N/Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVInfiniteScrolling.m
+c0000000052DC90EC0000000000002AF4
+t1390186732
+s10996
+
+N/Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVPullToRefresh.h
+c0000000052DC90EC000000000000087F
+t1390186732
+s2175
+
+N/Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVPullToRefresh.m
+c0000000052DC90EC000000000000705C
+t1390186732
+s28764
+
+N/Users/maruiduan/github/News/News/Vendor/StylePageControl/StyledPageControl.h
+c00000000515F5BBA00000000000009B7
+t1365203898
+s2487
+
+N/Users/maruiduan/github/News/News/Vendor/StylePageControl/StyledPageControl.m
+c00000000515F5BBA000000000000394A
+t1365203898
+s14666
+
+N/Users/maruiduan/github/News/News/ViewController.h
+c0000000052DCCB4A000000000000013E
+t1390201674
+s318
+
+N/Users/maruiduan/github/News/News/ViewController.m
+c0000000052DE421900000000000016B5
+t1390297625
+s5813
+
+N/Users/maruiduan/github/News/News/Views/NewTableCell.h
+c0000000052DDDDFD00000000000001B8
+t1390271997
+s440
+
+N/Users/maruiduan/github/News/News/Views/NewTableCell.m
+c0000000052DE420D0000000000000347
+t1390297613
+s839
+
+N/Users/maruiduan/github/News/News/en.lproj/InfoPlist.strings
+c0000000052DC90EC000000000000002D
+t1390186732
+s45
+
+N/Users/maruiduan/github/News/News/main.m
+c0000000052DC90EC000000000000014D
+t1390186732
+s333
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app
+t1390297625
+s1360
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app.dSYM
+t1390297564
+s102
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/Base.lproj/Main.storyboardc
+t1390297564
+s306
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/Info.plist
+t1390284124
+s1034
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News
+t1390297625
+s1025404
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/PkgInfo
+t1390284124
+s8
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/en.lproj/InfoPlist.strings
+t1390186732
+s42
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/movieBackward.png
+t1390186732
+s1422
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/movieBackward@2x.png
+t1390186732
+s1815
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/movieBackwardSelected.png
+t1390186732
+s1591
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/movieBackwardSelected@2x.png
+t1390186732
+s2238
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/movieEndFullscreen.png
+t1390186732
+s1315
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/movieEndFullscreen@2x.png
+t1390186732
+s1502
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/movieForward.png
+t1390186732
+s1423
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/movieForward@2x.png
+t1390186732
+s1875
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/movieForwardSelected.png
+t1390186732
+s1608
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/movieForwardSelected@2x.png
+t1390186732
+s2274
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/movieFullscreen.png
+t1390186732
+s1319
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/movieFullscreen@2x.png
+t1390186732
+s1507
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/moviePause.png
+t1390186732
+s1077
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/moviePause@2x.png
+t1390186732
+s1144
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/moviePlay.png
+t1390186732
+s1466
+
+N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/moviePlay@2x.png
+t1390186732
+s1695
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFHTTPClient.o
+t1390271997
+s213792
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFHTTPRequestOperation.o
+t1390271997
+s59016
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFImageRequestOperation.o
+t1390271997
+s59076
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFJSONRequestOperation.o
+t1390271997
+s43520
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFNetworkActivityIndicatorManager.o
+t1390271997
+s34444
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFPropertyListRequestOperation.o
+t1390271997
+s41800
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFURLConnectionOperation.o
+t1390271997
+s197128
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFXMLRequestOperation.o
+t1390271997
+s35080
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ALAirplayView.o
+t1390271997
+s49984
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ALButton.o
+t1390271997
+s55332
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ALMoviePlayerController.o
+t1390271997
+s114484
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ALMoviePlayerControls.o
+t1390271997
+s205456
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AppDelegate.o
+t1390271997
+s71480
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/HTTPClient.o
+t1390271997
+s20196
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/JSONKit.o
+t1390271997
+s254236
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/MBProgressHUD.o
+t1390271997
+s194112
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/MKAnnotationView+WebCache.o
+t1390271997
+s54656
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NSString+JSON.o
+t1390271997
+s6856
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/New.o
+t1390271997
+s18648
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewDetailController.o
+t1390295830
+s66712
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewTableCell.o
+t1390297625
+s51344
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/News.LinkFileList
+c0000000052DE0D560000000000001141
+t1390284118
+s4417
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/PageDatas.o
+t1390271997
+s16868
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/Reachability.o
+t1390271997
+s37480
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDImageCache.o
+t1390271997
+s53080
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDWebImageDecoder.o
+t1390271997
+s20376
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDWebImageDownloader.o
+t1390271997
+s51028
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDWebImageManager.o
+t1390271997
+s62908
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDWebImagePrefetcher.o
+t1390271997
+s28456
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/StyledPageControl.o
+t1390271997
+s96472
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIButton+WebCache.o
+t1390271997
+s68816
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIImageView+AFNetworking.o
+t1390271997
+s66476
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIImageView+WebCache.o
+t1390271997
+s53592
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIScrollView+SVInfiniteScrolling.o
+t1390271997
+s91312
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIScrollView+SVPullToRefresh.o
+t1390271997
+s159944
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/VideoController.o
+t1390296243
+s66676
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.o
+t1390297625
+s97892
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/main.o
+t1390271997
+s3644
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/assetcatalog_dependencies.txt
+t1390284120
+s1568
+
+N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/assetcatalog_generated_info.plist
+t1390284120
+s585
+
+N/usr/lib/libSystem.B.dylib
+c00000000525B929A000000000000E6D0
+t1381733018
+s59088
+
+N/usr/lib/system/libcache.dylib
+c00000000525B92A60000000000012A00
+t1381733030
+s76288
+
+N/usr/lib/system/libcommonCrypto.dylib
+c00000000525B928E000000000002E320
+t1381733006
+s189216
+
+N/usr/lib/system/libcompiler_rt.dylib
+c00000000525B929A0000000000021860
+t1381733018
+s137312
+
+N/usr/lib/system/libcopyfile.dylib
+c00000000525B92A6000000000001B620
+t1381733030
+s112160
+
+N/usr/lib/system/libcorecrypto.dylib
+c00000000525B92A600000000000BD920
+t1381733030
+s776480
+
+N/usr/lib/system/libdyld.dylib
+c00000000525B92A600000000000141F0
+t1381733030
+s82416
+
+N/usr/lib/system/libkeymgr.dylib
+c00000000525B92A6000000000000A120
+t1381733030
+s41248
+
+N/usr/lib/system/liblaunch.dylib
+c00000000525B92A6000000000001D550
+t1381733030
+s120144
+
+N/usr/lib/system/libmacho.dylib
+c00000000525B92A60000000000014EE0
+t1381733030
+s85728
+
+N/usr/lib/system/libquarantine.dylib
+c00000000525B92A80000000000010380
+t1381733032
+s66432
+
+N/usr/lib/system/libremovefile.dylib
+c00000000525B92A8000000000000C4C0
+t1381733032
+s50368
+
+N/usr/lib/system/libsystem_asl.dylib
+c00000000525B92A600000000000357A0
+t1381733030
+s219040
+
+N/usr/lib/system/libsystem_blocks.dylib
+c00000000525B92A6000000000000C070
+t1381733030
+s49264
+
+N/usr/lib/system/libsystem_c.dylib
+c00000000525B929A0000000000168C00
+t1381733018
+s1477632
+
+N/usr/lib/system/libsystem_configuration.dylib
+c00000000525B92A60000000000010630
+t1381733030
+s67120
+
+N/usr/lib/system/libsystem_dnssd.dylib
+c00000000525B92A7000000000001DF10
+t1381733031
+s122640
+
+N/usr/lib/system/libsystem_info.dylib
+c00000000525B929A0000000000075B00
+t1381733018
+s482048
+
+N/usr/lib/system/libsystem_kernel.dylib
+c00000000525B929A000000000007CC70
+t1381733018
+s511088
+
+N/usr/lib/system/libsystem_m.dylib
+c00000000525B929A00000000000766C0
+t1381733018
+s485056
+
+N/usr/lib/system/libsystem_malloc.dylib
+c00000000525B92A70000000000044DC0
+t1381733031
+s282048
+
+N/usr/lib/system/libsystem_notify.dylib
+c00000000525B929A0000000000021FA0
+t1381733018
+s139168
+
+N/usr/lib/system/libsystem_platform.dylib
+c00000000525B92A7000000000002D900
+t1381733031
+s186624
+
+N/usr/lib/system/libsystem_pthread.dylib
+c00000000525B92A7000000000001E570
+t1381733031
+s124272
+
+N/usr/lib/system/libsystem_sandbox.dylib
+c00000000525B929F000000000000CC70
+t1381733023
+s52336
+
+N/usr/lib/system/libunc.dylib
+c00000000525B92A2000000000000C3F0
+t1381733026
+s50160
+
+N/usr/lib/system/libunwind.dylib
+c00000000525B92A700000000000199F0
+t1381733031
+s104944
+
+N/var/folders/8m/bt_r_yxd1jqftknf6v2wbjb80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/News-Prefix-brotckdwagfrzzcjgaejfdqpmxdb/News-Prefix.pch.pch
+t1390186798
+s107580
+
+N/var/folders/8m/bt_r_yxd1jqftknf6v2wbjb80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/News-Prefix-egamqgzlokuobygsmwnonazuwtnf/News-Prefix.pch.pch
+t1390186797
+s113136
+
+CBuild AST from /Users/maruiduan/github/News/News/AppDelegate.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Controllers/NewDetailController.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Controllers/VideoController.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Helper/HTTPClient.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Helper/NSString+JSON.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Helper/PageDatas.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Models/New.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPRequestOperation.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFImageRequestOperation.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFJSONRequestOperation.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFNetworkActivityIndicatorManager.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFPropertyListRequestOperation.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFURLConnectionOperation.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFXMLRequestOperation.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/AFNetworking/UIImageView+AFNetworking.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALAirplayView.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALButton.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALMoviePlayerController.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALMoviePlayerControls.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/JSONKit/JSONKit.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/MBProgress/MBProgressHUD.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/Reachability/Reachability.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/SDWebImage/MKAnnotationView+WebCache.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDImageCache.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageDecoder.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageDownloader.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageManager.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImagePrefetcher.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/SDWebImage/UIButton+WebCache.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/SDWebImage/UIImageView+WebCache.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVInfiniteScrolling.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVPullToRefresh.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Vendor/StylePageControl/StyledPageControl.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/ViewController.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/Views/NewTableCell.m
+r0
+
+CBuild AST from /Users/maruiduan/github/News/News/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesfe9e6899798eb841^4d2f6999798eb841^---0#1#1#--18"Check dependencies36"37010245-5813-4DE4-B488-F4797A7F48FC-
+
+CCompileAssetCatalog /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app /Users/maruiduan/github/News/News/Images.xcassets
+s411976918.721232
+e411976920.203800
+r1
+xCompileAssetCatalog
+x/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app
+x/Users/maruiduan/github/News/News/Images.xcassets
+o/* com.apple.actool.compilation-results */
+o/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/LaunchImage-700-568h@2x.png
+o/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/LaunchImage-568h@2x.png
+o/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/arrow@2x.png
+o/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/arrow_down@2x.png
+o/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/arrow_press@2x.png
+o/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/bar_bg@2x.png
+o/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/bg_4@2x.png
+o/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/bg_5@2x.png
+o/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/img_bg@2x.png
+o/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/line@2x.png
+o/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/news_img@2x.png
+o/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/search_bg@2x.png
+o/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/search_input@2x.png
+o/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/search_listbg@2x.png
+o/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/search_listline@2x.png
+o/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/search_timgbg@2x.png
+o/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/top_contentbg.png
+o/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/assetcatalog_generated_info.plist
+o
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"CompileAssetCatalog build/Debug-iphonesimulator/News.app News/Images.xcassets77"CompileAssetCatalog build/Debug-iphonesimulator/News.app News/Images.xcassets10aeb8d6448eb841^802c34d8448eb841^-1581"/* com.apple.actool.compilation-results *//Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/LaunchImage-700-568h@2x.png/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/LaunchImage-568h@2x.png/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/arrow@2x.png/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/arrow_down@2x.png/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/arrow_press@2x.png/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/bar_bg@2x.png/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/bg_4@2x.png/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/bg_5@2x.png/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/img_bg@2x.png/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/line@2x.png/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/news_img@2x.png/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/search_bg@2x.png/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/search_input@2x.png/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/search_listbg@2x.png/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/search_listline@2x.png/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/search_timgbg@2x.png/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/top_contentbg.png/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/assetcatalog_generated_info.plist-0#0#1#-19%DVTDocumentLocation2@57"file:///Users/maruiduan/github/News/News/Images.xcassets/0000000000000000^1018"CompileAssetCatalog build/Debug-iphonesimulator/News.app News/Images.xcassets    cd /Users/maruiduan/github/News    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/actool --output-format human-readable-text --notices --warnings --export-dependency-info /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/assetcatalog_dependencies.txt --output-partial-info-plist /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/assetcatalog_generated_info.plist --app-icon AppIcon --launch-image LaunchImage --platform iphonesimulator --minimum-deployment-target 6.0 --target-device iphone --compress-pngs --compile /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app /Users/maruiduan/github/News/News/Images.xcassets36"4A59FA76-053B-43D9-B36D-9BD625DEE5AD-
+b844A330F-C627-4294-8C34-9A4F4597FCFC
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFHTTPClient.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFHTTPRequestOperation.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFImageRequestOperation.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFImageRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFJSONRequestOperation.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFJSONRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFNetworkActivityIndicatorManager.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFNetworkActivityIndicatorManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFPropertyListRequestOperation.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFPropertyListRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFURLConnectionOperation.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFURLConnectionOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFXMLRequestOperation.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/AFXMLRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ALAirplayView.o /Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALAirplayView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ALButton.o /Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALButton.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ALMoviePlayerController.o /Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALMoviePlayerController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ALMoviePlayerControls.o /Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALMoviePlayerControls.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AppDelegate.o /Users/maruiduan/github/News/News/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/HTTPClient.o /Users/maruiduan/github/News/News/Helper/HTTPClient.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/JSONKit.o /Users/maruiduan/github/News/News/Vendor/JSONKit/JSONKit.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/MBProgressHUD.o /Users/maruiduan/github/News/News/Vendor/MBProgress/MBProgressHUD.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/MKAnnotationView+WebCache.o /Users/maruiduan/github/News/News/Vendor/SDWebImage/MKAnnotationView+WebCache.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NSString+JSON.o /Users/maruiduan/github/News/News/Helper/NSString+JSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/New.o /Users/maruiduan/github/News/News/Models/New.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewDetailController.o /Users/maruiduan/github/News/News/Controllers/NewDetailController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s411988630.085467
+e411988630.525310
+r1
+xCompileC
+xbuild/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewDetailController.o
+x/Users/maruiduan/github/News/News/Controllers/NewDetailController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/maruiduan/github/News/News/Controllers/NewDetailController.m
+d/Users/maruiduan/github/News/News/Controllers/NewDetailController.h
+d/Users/maruiduan/github/News/News/Models/New.h
+d/Users/maruiduan/github/News/News/Helper/IParse.h
+d/Users/maruiduan/github/News/News/Controllers/VideoController.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/UIButton+WebCache.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageCompat.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageManagerDelegate.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageManager.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageDownloaderDelegate.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDImageCacheDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/maruiduan/github/News/News/Controllers/NewDetailController.m207"CompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewDetailController.o News/Controllers/NewDetailController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler27f91596728eb841^247d8696728eb841^---0#0#1#-19%DVTDocumentLocation2@74"file:///Users/maruiduan/github/News/News/Controllers/NewDetailController.m0000000000000000^3383"CompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewDetailController.o News/Controllers/NewDetailController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/maruiduan/github/News    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/maruiduan/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-generated-files.hmap -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-own-target-headers.hmap -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-all-target-headers.hmap -iquote /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-project-headers.hmap -I/Users/maruiduan/github/News/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/DerivedSources/i386 -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/DerivedSources -F/Users/maruiduan/github/News/build/Debug-iphonesimulator -include /var/folders/8m/bt_r_yxd1jqftknf6v2wbjb80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/News-Prefix-brotckdwagfrzzcjgaejfdqpmxdb/News-Prefix.pch -MMD -MT dependencies -MF /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewDetailController.d --serialize-diagnostics /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewDetailController.dia -c /Users/maruiduan/github/News/News/Controllers/NewDetailController.m -o /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewDetailController.o36"1870ECA8-EC60-41AF-B2AC-B71A252FAEC2-
+bB4C4A7E3-A2FC-4846-8431-43E150E7331A
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewTableCell.o /Users/maruiduan/github/News/News/Views/NewTableCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s411990425.412781
+e411990425.486267
+r1
+xCompileC
+xbuild/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewTableCell.o
+x/Users/maruiduan/github/News/News/Views/NewTableCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/maruiduan/github/News/News/Views/NewTableCell.m
+d/Users/maruiduan/github/News/News/Views/NewTableCell.h
+d/Users/maruiduan/github/News/News/Models/New.h
+d/Users/maruiduan/github/News/News/Helper/IParse.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/UIImageView+WebCache.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageCompat.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageManagerDelegate.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageManager.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageDownloaderDelegate.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDImageCacheDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/maruiduan/github/News/News/Views/NewTableCell.m187"CompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewTableCell.o News/Views/NewTableCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler9bc76999798eb841^317c7c99798eb841^---0#0#1#-19%DVTDocumentLocation2@61"file:///Users/maruiduan/github/News/News/Views/NewTableCell.m0000000000000000^3329"CompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewTableCell.o News/Views/NewTableCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/maruiduan/github/News    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/maruiduan/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-generated-files.hmap -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-own-target-headers.hmap -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-all-target-headers.hmap -iquote /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-project-headers.hmap -I/Users/maruiduan/github/News/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/DerivedSources/i386 -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/DerivedSources -F/Users/maruiduan/github/News/build/Debug-iphonesimulator -include /var/folders/8m/bt_r_yxd1jqftknf6v2wbjb80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/News-Prefix-brotckdwagfrzzcjgaejfdqpmxdb/News-Prefix.pch -MMD -MT dependencies -MF /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewTableCell.d --serialize-diagnostics /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewTableCell.dia -c /Users/maruiduan/github/News/News/Views/NewTableCell.m -o /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewTableCell.o36"77587634-7AB4-4AF5-8027-408483B4D93C-
+bCFD3925E-D6F5-40F4-9568-0FAF8F10C33E
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/PageDatas.o /Users/maruiduan/github/News/News/Helper/PageDatas.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/Reachability.o /Users/maruiduan/github/News/News/Vendor/Reachability/Reachability.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDImageCache.o /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDImageCache.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDWebImageDecoder.o /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageDecoder.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDWebImageDownloader.o /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageDownloader.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDWebImageManager.o /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDWebImagePrefetcher.o /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImagePrefetcher.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/StyledPageControl.o /Users/maruiduan/github/News/News/Vendor/StylePageControl/StyledPageControl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIButton+WebCache.o /Users/maruiduan/github/News/News/Vendor/SDWebImage/UIButton+WebCache.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIImageView+AFNetworking.o /Users/maruiduan/github/News/News/Vendor/AFNetworking/UIImageView+AFNetworking.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIImageView+WebCache.o /Users/maruiduan/github/News/News/Vendor/SDWebImage/UIImageView+WebCache.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIScrollView+SVInfiniteScrolling.o /Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVInfiniteScrolling.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIScrollView+SVPullToRefresh.o /Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVPullToRefresh.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/VideoController.o /Users/maruiduan/github/News/News/Controllers/VideoController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s411989042.564571
+e411989043.015827
+r1
+xCompileC
+xbuild/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/VideoController.o
+x/Users/maruiduan/github/News/News/Controllers/VideoController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/maruiduan/github/News/News/Controllers/VideoController.m
+d/Users/maruiduan/github/News/News/Controllers/VideoController.h
+d/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALMoviePlayerController.h
+d/Users/maruiduan/github/News/News/Vendor/ALMoviePlayerController/ALMoviePlayerControls.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/maruiduan/github/News/News/Controllers/VideoController.m199"CompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/VideoController.o News/Controllers/VideoController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerf4a89032748eb841^e00e0433748eb841^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/maruiduan/github/News/News/Controllers/VideoController.m0000000000000000^3359"CompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/VideoController.o News/Controllers/VideoController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/maruiduan/github/News    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/maruiduan/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-generated-files.hmap -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-own-target-headers.hmap -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-all-target-headers.hmap -iquote /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-project-headers.hmap -I/Users/maruiduan/github/News/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/DerivedSources/i386 -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/DerivedSources -F/Users/maruiduan/github/News/build/Debug-iphonesimulator -include /var/folders/8m/bt_r_yxd1jqftknf6v2wbjb80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/News-Prefix-brotckdwagfrzzcjgaejfdqpmxdb/News-Prefix.pch -MMD -MT dependencies -MF /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/VideoController.d --serialize-diagnostics /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/VideoController.dia -c /Users/maruiduan/github/News/News/Controllers/VideoController.m -o /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/VideoController.o36"0E66496E-86A3-4D63-9FA4-34032651DF74-
+b1E9D0367-2EC6-49EA-A683-C06A3733025A
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.o /Users/maruiduan/github/News/News/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s411990425.410561
+e411990425.623702
+r1
+xCompileC
+xbuild/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.o
+x/Users/maruiduan/github/News/News/ViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/maruiduan/github/News/News/ViewController.m
+d/Users/maruiduan/github/News/News/ViewController.h
+d/Users/maruiduan/github/News/News/Views/NewTableCell.h
+d/Users/maruiduan/github/News/News/Models/New.h
+d/Users/maruiduan/github/News/News/Helper/IParse.h
+d/Users/maruiduan/github/News/News/Helper/PageDatas.h
+d/Users/maruiduan/github/News/News/Controllers/NewDetailController.h
+d/Users/maruiduan/github/News/News/Vendor/StylePageControl/StyledPageControl.h
+d/Users/maruiduan/github/News/News/Helper/HTTPClient.h
+d/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.h
+d/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFURLConnectionOperation.h
+d/Users/maruiduan/github/News/News/Helper/NSString+JSON.h
+d/Users/maruiduan/github/News/News/Vendor/JSONKit/JSONKit.h
+d/Users/maruiduan/github/News/News/Vendor/SVPullRresh/SVPullToRefresh.h
+d/Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVPullToRefresh.h
+d/Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVInfiniteScrolling.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/UIImageView+WebCache.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageCompat.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageManagerDelegate.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageManager.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageDownloaderDelegate.h
+d/Users/maruiduan/github/News/News/Vendor/SDWebImage/SDImageCacheDelegate.h
+oIn file included from /Users/maruiduan/github/News/News/ViewController.m:14:
+oIn file included from /Users/maruiduan/github/News/News/Helper/HTTPClient.h:10:
+o/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.h:84:9: warning: SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available. [-W#pragma-messages]
+o#pragma message("SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.")
+o        ^
+o/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.h:89:9: warning: MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available. [-W#pragma-messages]
+o#pragma message("MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available.")
+o        ^
+o2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Users/maruiduan/github/News/News/ViewController.m185"CompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.o News/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler12316999798eb841^d787a199798eb841^-1117"In file included from /Users/maruiduan/github/News/News/ViewController.m:14:In file included from /Users/maruiduan/github/News/News/Helper/HTTPClient.h:10:/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.h:84:9: warning: SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available. [-W#pragma-messages]#pragma message("SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.")        ^/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.h:89:9: warning: MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available. [-W#pragma-messages]#pragma message("MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available.")        ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@148"SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.-411990425#18446744073709551615#0#2(2@76"In file included from /Users/maruiduan/github/News/News/ViewController.m:14:-411990425#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@57"file:///Users/maruiduan/github/News/News/ViewController.m0000000000000000^13#8#13#8#279#0#21"Apple LLVM 5.0 Notice--2@79"In file included from /Users/maruiduan/github/News/News/Helper/HTTPClient.h:10:-411990425#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@60"file:///Users/maruiduan/github/News/News/Helper/HTTPClient.h0000000000000000^9#8#9#8#173#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@75"file:///Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.h0000000000000000^83#8#83#8#4897#0#25"#pragma message Directive--2@185"MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available.-411990425#18446744073709551615#0#2(2@76"In file included from /Users/maruiduan/github/News/News/ViewController.m:14:-411990425#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@57"file:///Users/maruiduan/github/News/News/ViewController.m0000000000000000^13#8#13#8#279#0#21"Apple LLVM 5.0 Notice--2@79"In file included from /Users/maruiduan/github/News/News/Helper/HTTPClient.h:10:-411990425#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@60"file:///Users/maruiduan/github/News/News/Helper/HTTPClient.h0000000000000000^9#8#9#8#173#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@75"file:///Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.h0000000000000000^88#8#88#8#5129#0#25"#pragma message Directive--0#0#1#-19%DVTDocumentLocation4@57"file:///Users/maruiduan/github/News/News/ViewController.m0000000000000000^3329"CompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.o News/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/maruiduan/github/News    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/maruiduan/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-generated-files.hmap -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-own-target-headers.hmap -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-all-target-headers.hmap -iquote /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-project-headers.hmap -I/Users/maruiduan/github/News/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/DerivedSources/i386 -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/DerivedSources -F/Users/maruiduan/github/News/build/Debug-iphonesimulator -include /var/folders/8m/bt_r_yxd1jqftknf6v2wbjb80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/News-Prefix-brotckdwagfrzzcjgaejfdqpmxdb/News-Prefix.pch -MMD -MT dependencies -MF /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.d --serialize-diagnostics /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.dia -c /Users/maruiduan/github/News/News/ViewController.m -o /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.o36"BBDE3FD5-1873-4F29-B740-207E3DC2E882-
+bCFD3925E-D6F5-40F4-9568-0FAF8F10C33E
+
+CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/main.o /Users/maruiduan/github/News/News/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileStoryboard /Users/maruiduan/github/News/News/Base.lproj/Main.storyboard
+s411990363.667013
+e411990364.692045
+r1
+xCompileStoryboard
+x/Users/maruiduan/github/News/News/Base.lproj/Main.storyboard
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"CompileStoryboard News/Base.lproj/Main.storyboard49"CompileStoryboard News/Base.lproj/Main.storyboard57ceaa5b798eb841^382cb15c798eb841^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/maruiduan/github/News/News/Base.lproj/Main.storyboard0000000000000000^791"CompileStoryboard News/Base.lproj/Main.storyboard    cd /Users/maruiduan/github/News    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 6.0 --output-format human-readable-text --compile /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/Base.lproj/Main.storyboardc /Users/maruiduan/github/News/News/Base.lproj/Main.storyboard36"09B1B34B-36A4-4184-9D7E-D9959A95E4E2-
+b8CF8E02C-0E58-49EB-AF7A-42DB6235B759
+
+CCopyStringsFile /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/en.lproj/InfoPlist.strings News/en.lproj/InfoPlist.strings
+r0
+
+CCpResource News/Vendor/ALMoviePlayerController/Images/movieBackward.png build/Debug-iphonesimulator/News.app/movieBackward.png
+r0
+
+CCpResource News/Vendor/ALMoviePlayerController/Images/movieBackward@2x.png build/Debug-iphonesimulator/News.app/movieBackward@2x.png
+r0
+
+CCpResource News/Vendor/ALMoviePlayerController/Images/movieBackwardSelected.png build/Debug-iphonesimulator/News.app/movieBackwardSelected.png
+r0
+
+CCpResource News/Vendor/ALMoviePlayerController/Images/movieBackwardSelected@2x.png build/Debug-iphonesimulator/News.app/movieBackwardSelected@2x.png
+r0
+
+CCpResource News/Vendor/ALMoviePlayerController/Images/movieEndFullscreen.png build/Debug-iphonesimulator/News.app/movieEndFullscreen.png
+r0
+
+CCpResource News/Vendor/ALMoviePlayerController/Images/movieEndFullscreen@2x.png build/Debug-iphonesimulator/News.app/movieEndFullscreen@2x.png
+r0
+
+CCpResource News/Vendor/ALMoviePlayerController/Images/movieForward.png build/Debug-iphonesimulator/News.app/movieForward.png
+r0
+
+CCpResource News/Vendor/ALMoviePlayerController/Images/movieForward@2x.png build/Debug-iphonesimulator/News.app/movieForward@2x.png
+r0
+
+CCpResource News/Vendor/ALMoviePlayerController/Images/movieForwardSelected.png build/Debug-iphonesimulator/News.app/movieForwardSelected.png
+r0
+
+CCpResource News/Vendor/ALMoviePlayerController/Images/movieForwardSelected@2x.png build/Debug-iphonesimulator/News.app/movieForwardSelected@2x.png
+r0
+
+CCpResource News/Vendor/ALMoviePlayerController/Images/movieFullscreen.png build/Debug-iphonesimulator/News.app/movieFullscreen.png
+r0
+
+CCpResource News/Vendor/ALMoviePlayerController/Images/movieFullscreen@2x.png build/Debug-iphonesimulator/News.app/movieFullscreen@2x.png
+r0
+
+CCpResource News/Vendor/ALMoviePlayerController/Images/moviePause.png build/Debug-iphonesimulator/News.app/moviePause.png
+r0
+
+CCpResource News/Vendor/ALMoviePlayerController/Images/moviePause@2x.png build/Debug-iphonesimulator/News.app/moviePause@2x.png
+r0
+
+CCpResource News/Vendor/ALMoviePlayerController/Images/moviePlay.png build/Debug-iphonesimulator/News.app/moviePlay.png
+r0
+
+CCpResource News/Vendor/ALMoviePlayerController/Images/moviePlay@2x.png build/Debug-iphonesimulator/News.app/moviePlay@2x.png
+r0
+
+CGenerateDSYMFile /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app.dSYM /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News
+s411990425.719765
+e411990425.788109
+r1
+xGenerateDSYMFile
+x/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app.dSYM
+x/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Generate /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app.dSYM100"GenerateDSYMFile build/Debug-iphonesimulator/News.app.dSYM build/Debug-iphonesimulator/News.app/News874db899798eb841^8fc2c999798eb841^---0#0#1#-19%DVTDocumentLocation2@78"file:///Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app.dSYM/0000000000000000^577"GenerateDSYMFile build/Debug-iphonesimulator/News.app.dSYM build/Debug-iphonesimulator/News.app/News    cd /Users/maruiduan/github/News    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News -o /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app.dSYM36"3A0D147C-6A5D-4852-ADF7-B3B3DC6657F7-
+bCFD3925E-D6F5-40F4-9568-0FAF8F10C33E
+
+CLd /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News normal i386
+s411990425.626224
+e411990425.716285
+r1
+xLd
+x/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News
+xnormal
+xi386
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/News.LinkFileList
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/crt1.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/Reachability.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ALMoviePlayerControls.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/JSONKit.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFImageRequestOperation.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/HTTPClient.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIImageView+WebCache.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFPropertyListRequestOperation.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDWebImageManager.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AppDelegate.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/PageDatas.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFURLConnectionOperation.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/VideoController.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFXMLRequestOperation.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIScrollView+SVInfiniteScrolling.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFJSONRequestOperation.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDWebImageDecoder.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDWebImagePrefetcher.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDWebImageDownloader.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/New.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/StyledPageControl.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIImageView+AFNetworking.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ALMoviePlayerController.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ALButton.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIButton+WebCache.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewDetailController.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ALAirplayView.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/MBProgressHUD.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFNetworkActivityIndicatorManager.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFHTTPRequestOperation.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NewTableCell.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/MKAnnotationView+WebCache.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/NSString+JSON.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/UIScrollView+SVPullToRefresh.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/main.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/AFHTTPClient.o
+d/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/SDImageCache.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Security.framework/Security
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_override.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcache_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcopyfile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdyld_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libmacho_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libnotify_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libremovefile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libunwind_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_asl.dylib
+d/usr/lib/libSystem.B.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
+d/usr/lib/system/libcache.dylib
+d/usr/lib/system/libcommonCrypto.dylib
+d/usr/lib/system/libcompiler_rt.dylib
+d/usr/lib/system/libcopyfile.dylib
+d/usr/lib/system/libcorecrypto.dylib
+d/usr/lib/system/libkeymgr.dylib
+d/usr/lib/system/liblaunch.dylib
+d/usr/lib/system/libmacho.dylib
+d/usr/lib/system/libquarantine.dylib
+d/usr/lib/system/libremovefile.dylib
+d/usr/lib/system/libsystem_asl.dylib
+d/usr/lib/system/libsystem_blocks.dylib
+d/usr/lib/system/libsystem_c.dylib
+d/usr/lib/system/libsystem_configuration.dylib
+d/usr/lib/system/libsystem_dnssd.dylib
+d/usr/lib/system/libsystem_info.dylib
+d/usr/lib/system/libsystem_kernel.dylib
+d/usr/lib/system/libsystem_m.dylib
+d/usr/lib/system/libsystem_malloc.dylib
+d/usr/lib/system/libsystem_notify.dylib
+d/usr/lib/system/libsystem_platform.dylib
+d/usr/lib/system/libsystem_pthread.dylib
+d/usr/lib/system/libsystem_sandbox.dylib
+d/usr/lib/system/libunc.dylib
+d/usr/lib/system/libunwind.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Link /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News56"Ld build/Debug-iphonesimulator/News.app/News normal i386f65ea099798eb841^ba84b799798eb841^---0#0#1#--1382"Ld build/Debug-iphonesimulator/News.app/News normal i386    cd /Users/maruiduan/github/News    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/maruiduan/github/News/build/Debug-iphonesimulator -F/Users/maruiduan/github/News/build/Debug-iphonesimulator -filelist /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/News.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.0 -framework QuartzCore -framework MediaPlayer -framework MobileCoreServices -framework Security -framework CFNetwork -framework SystemConfiguration -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/News_dependency_info.dat -o /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News36"8F9B0447-CF2A-4EC7-B662-517B9D5640FE-
+bCFD3925E-D6F5-40F4-9568-0FAF8F10C33E
+
+CProcessInfoPlistFile /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/Info.plist /Users/maruiduan/github/News/News/News-Info.plist
+s411976924.810690
+e411976924.817007
+r1
+xProcessInfoPlistFile
+x/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/Info.plist
+x/Users/maruiduan/github/News/News/News-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Process /Users/maruiduan/github/News/News/News-Info.plist89"ProcessInfoPlistFile build/Debug-iphonesimulator/News.app/Info.plist News/News-Info.pliste2c8cfdc448eb841^1728d1dc448eb841^---0#0#1#-19%DVTDocumentLocation2@56"file:///Users/maruiduan/github/News/News/News-Info.plist0000000000000000^764"ProcessInfoPlistFile build/Debug-iphonesimulator/News.app/Info.plist News/News-Info.plist    cd /Users/maruiduan/github/News    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility /Users/maruiduan/github/News/News/News-Info.plist -genpkginfo /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/assetcatalog_generated_info.plist -o /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/Info.plist36"940E0902-0009-4B04-84A1-6C4AD3D828C1-
+b844A330F-C627-4294-8C34-9A4F4597FCFC
+
+CProcessPCH /Users/maruiduan/Library/Developer/Xcode/DerivedData/News-cuiojmesarfimbhdwvbiimorahvi/Index/PrecompiledHeaders/News-Prefix-asaydrwsrnhoggbboqwrgegamhvs_ast/News-Prefix.pch.pch News/News-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/maruiduan/Library/Developer/Xcode/DerivedData/News-cuiojmesarfimbhdwvbiimorahvi/Index/PrecompiledHeaders/News-Prefix-fbwptkzzwugpaneecrwdindkuaek_ast/News-Prefix.pch.pch News/News-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/8m/bt_r_yxd1jqftknf6v2wbjb80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/News-Prefix-brotckdwagfrzzcjgaejfdqpmxdb/News-Prefix.pch.pch News/News-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH /var/folders/8m/bt_r_yxd1jqftknf6v2wbjb80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/News-Prefix-egamqgzlokuobygsmwnonazuwtnf/News-Prefix.pch.pch News/News-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CTouch /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app
+s411990364.778076
+e411990364.781461
+r1
+xTouch
+x/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Touch /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app42"Touch build/Debug-iphonesimulator/News.app213bc75c798eb841^cb0fc85c798eb841^---0#0#1#--362"Touch build/Debug-iphonesimulator/News.app    cd /Users/maruiduan/github/News    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app36"8B99FD28-0E73-4065-B723-6E84BCA28ADC-
+b8CF8E02C-0E58-49EB-AF7A-42DB6235B759
+

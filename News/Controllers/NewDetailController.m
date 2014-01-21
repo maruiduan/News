@@ -7,6 +7,8 @@
 //
 
 #import "NewDetailController.h"
+#import "VideoController.h"
+#import "UIButton+WebCache.h"
 
 @interface NewDetailController ()
 
@@ -26,7 +28,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    [self setNews:_news];
+}
+
+- (void)setNews:(New *)news
+{
+    _news = news;
+    self.newsTitle.text = news.title;
+    self.newsSubTitle.text = news.synopsis;
+    self.newsDetail.text = news.contents;
+    
+    __block NewDetailController *weak = self;
+    [self.newsImageView setImageWithURL:[NSURL URLWithString:news.pickurl] success:^(UIImage *image, BOOL cached) {
+        weak.newsImageView.imageView.image = image;
+    } failure:^(NSError *error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,4 +51,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"VideoController"]) {
+        VideoController *videoController = segue.destinationViewController;
+        videoController.url = self.news.videourl;
+    }
+}
+
 @end

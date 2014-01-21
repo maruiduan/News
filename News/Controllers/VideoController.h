@@ -10,4 +10,11 @@
 
 @interface VideoController : UIViewController
 
+@property (nonatomic, strong) NSString *url;
+
+- (instancetype)initWithURL:(NSString *)url;
+
+- (IBAction)dismiss;
+
+
 @end

@@ -32,7 +32,10 @@
     _news = news;
     self.title.text = news.title;
     self.subTitle.text = news.synopsis;
-    [self.imageView setImageWithURL:[NSURL URLWithString:news.pickurl]];
+    [self setNeedsLayout];
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+}
 @end

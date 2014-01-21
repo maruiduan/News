@@ -29,13 +29,22 @@
     return self;
 }
 
+- (instancetype)initWithURL:(NSString *)url
+{
+    self = [super init];
+    if (self) {
+        self.url = url;
+    }
+    return self;
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor darkGrayColor];
     
-    //create a player
     self.moviePlayer = [[ALMoviePlayerController alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     self.moviePlayer.view.alpha = 0.f;
     self.moviePlayer.delegate = self; //IMPORTANT!
@@ -55,21 +64,23 @@
     
     //THEN set contentURL
 
-    [self.moviePlayer setContentURL:[NSURL URLWithString:@"http://archive.org/download/WaltDisneyCartoons-MickeyMouseMinnieMouseDonaldDuckGoofyAndPluto/WaltDisneyCartoons-MickeyMouseMinnieMouseDonaldDuckGoofyAndPluto-HawaiianHoliday1937-Video.mp4"]];
+    [self.moviePlayer setContentURL:[NSURL URLWithString:self.url]];    
+    
+    [self.moviePlayer prepareToPlay];
     [self.moviePlayer play];
     
     //delay initial load so statusBarOrientation returns correct value
-    double delayInSeconds = 0.3;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        [self configureViewForOrientation:[UIApplication sharedApplication].statusBarOrientation];
-        [UIView animateWithDuration:0.3 delay:0.0 options:0 animations:^{
-            self.moviePlayer.view.alpha = 1.f;
-        } completion:^(BOOL finished) {
-            self.navigationItem.leftBarButtonItem.enabled = YES;
-            self.navigationItem.rightBarButtonItem.enabled = YES;
-        }];
-    });
+//    double delayInSeconds = 0.3;
+//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+//        [self configureViewForOrientation:[UIApplication sharedApplication].statusBarOrientation];
+//        [UIView animateWithDuration:0.3 delay:0.0 options:0 animations:^{
+//            self.moviePlayer.view.alpha = 1.f;
+//        } completion:^(BOOL finished) {
+//            self.navigationItem.leftBarButtonItem.enabled = YES;
+//            self.navigationItem.rightBarButtonItem.enabled = YES;
+//        }];
+//    });
 
 	// Do any additional setup after loading the view.
 }
@@ -86,7 +97,7 @@
         videoHeight = 220.f;
     }
     
-    //calulate the frame on every rotation, so when we're returning from fullscreen mode we'll know where to position the movie plauyer
+    //; the frame on every rotation, so when we're returning from fullscreen mode we'll know where to position the movie plauyer
     self.defaultFrame = CGRectMake(self.view.frame.size.width/2 - videoWidth/2, self.view.frame.size.height/2 - videoHeight/2, videoWidth, videoHeight);
     
     //only manage the movie player frame when it's not in fullscreen. when in fullscreen, the frame is automatically managed
@@ -95,12 +106,6 @@
     
     //you MUST use [ALMoviePlayerController setFrame:] to adjust frame, NOT [ALMoviePlayerController.view setFrame:]
     [self.moviePlayer setFrame:self.defaultFrame];
-}
-
-- (void)remoteFile {
-    [self.moviePlayer stop];
-    [self.moviePlayer setContentURL:[NSURL URLWithString:@"http://archive.org/download/WaltDisneyCartoons-MickeyMouseMinnieMouseDonaldDuckGoofyAndPluto/WaltDisneyCartoons-MickeyMouseMinnieMouseDonaldDuckGoofyAndPluto-HawaiianHoliday1937-Video.mp4"]];
-    [self.moviePlayer play];
 }
 
 //IMPORTANT!
@@ -134,6 +139,15 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (IBAction)dismiss
+{
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+    [self.moviePlayer setDelegate:nil];
 }
 
 @end

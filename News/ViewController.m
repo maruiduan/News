@@ -76,6 +76,7 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
     NewTableCell *cell = [tableView dequeueReusableCellWithIdentifier:NewTableCellIdentifier];
     New *news = [self.videoLists.data objectAtIndex:indexPath.row];
     cell.news = news;
+    [cell.imageView setImageWithURL:[NSURL URLWithString:news.pickurl]];
     return cell;
 }
 
