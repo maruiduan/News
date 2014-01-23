@@ -187,8 +187,47 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
     }];
 }
 
+- (void)requestSearchTitle:(NSString *)title date:(NSString *)date page:(int)page
+{
+    if (self.videoLists.more) {
+        page = self.videoLists.page + 1;
+    }else{
+        return;
+    }
+    
+    NSDictionary *parametre = @{@"requestcommand":@"video_list",
+                                @"title":title,
+                                @"times":date,
+                                @"pagesize":@"30",
+                                @"pagenumber":@(page),
+                                @"type":@(1)};
+    [[HTTPClient sharedClient] postParameters:parametre success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSString *result = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+        NSDictionary *resultDict = [result JSONDictionary];
+        
+        self.videoLists = [PageDatas pageDatasWithJSON:resultDict parserClass:[New class]];
+        NSLog(@"%@",result);
+        [self.tableView.infiniteScrollingView stopAnimating];
+        [self.tableView reloadData];
+        self.tableView.infiniteScrollingView.enabled = self.videoLists.more;
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@",error);
+        [self.tableView.infiniteScrollingView stopAnimating];
+        
+    }];
+
+}
+
 #pragma mark -UIScrollView
 
 #pragma mark -UITextField
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (!textField.text.length) {
+        [textField resignFirstResponder];
+    }
+    return YES;
+}
 
 @end

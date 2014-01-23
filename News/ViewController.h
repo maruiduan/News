@@ -12,6 +12,7 @@
 
 @property (nonatomic ,strong) IBOutlet UITableView *tableView;
 @property (nonatomic ,strong) IBOutlet UIScrollView *mainView;
+@property (nonatomic ,strong) IBOutlet UIDatePicker *timeView;
 
 
 @end
