@@ -10,7 +10,7 @@
 #include "New.h"
 @interface NewTableCell : UITableViewCell
 
-@property (nonatomic, strong) IBOutlet UIImageView *imageView;
+@property (nonatomic, strong) IBOutlet UIImageView *newsImageView;
 @property (nonatomic, strong) IBOutlet UILabel *title;
 @property (nonatomic, strong) IBOutlet UILabel *subTitle;
 @property (nonatomic, strong) New *news;

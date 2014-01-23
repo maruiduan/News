@@ -14,7 +14,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
     // 监测网络情况
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(reachabilityChanged:)
@@ -28,6 +27,19 @@
     }else{
             [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"bar_bg@2x"] forBarMetrics:UIBarMetricsDefault];
     }
+    
+//    UINavigationBar* appearanceNavigationBar = [UINavigationBar appearance];
+//    //the appearanceProxy returns NO, so ask the class directly
+//    if ([[UINavigationBar class] instancesRespondToSelector:@selector(setBackIndicatorImage:)])
+//    {
+//        appearanceNavigationBar.backIndicatorImage = [UIImage imageNamed:@"arrow"];
+//        appearanceNavigationBar.backIndicatorTransitionMaskImage = [UIImage imageNamed:@"arrow"];
+//        //sets back button color
+////        appearanceNavigationBar.tintColor = [UIColor whiteColor];
+//    }else{
+//        //do ios 6 customization
+//    }
+
     return YES;
 }
 							

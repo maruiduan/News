@@ -30,6 +30,7 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
 
 @implementation ViewController
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -50,13 +51,13 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
     [self requestVideoList];
     
     __block ViewController *weak = self;
-    [self.tableView addPullToRefreshWithActionHandler:^{
-        [weak requestVideoList];
-    }];
-    
-//    [self.tableView addInfiniteScrollingWithActionHandler:^{
-//        [weak requestMoreVideoList];
+//    [self.tableView addPullToRefreshWithActionHandler:^{
+//        [weak requestVideoList];
 //    }];
+    
+    [self.tableView addInfiniteScrollingWithActionHandler:^{
+        [weak requestMoreVideoList];
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,7 +77,6 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
     NewTableCell *cell = [tableView dequeueReusableCellWithIdentifier:NewTableCellIdentifier];
     New *news = [self.videoLists.data objectAtIndex:indexPath.row];
     cell.news = news;
-    [cell.imageView setImageWithURL:[NSURL URLWithString:news.pickurl]];
     return cell;
 }
 
@@ -113,6 +113,22 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
         self.mainLists = [PageDatas pageDatasWithJSON:resultDict parserClass:[New class]];
         NSLog(@"%@",result);
         
+        if ([self.mainLists.data count]) {
+            [[self.mainView subviews] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                [obj removeFromSuperview];
+            }];
+            
+            [self.mainLists.data enumerateObjectsUsingBlock:^(New *news, NSUInteger idx, BOOL *stop) {
+                UIImageView *imageView = UIImageView.new;
+                [imageView setImageWithURL:[NSURL URLWithString:news.pickurl]];
+                CGRect rect = self.mainView.frame;
+                rect.origin.x = CGRectGetWidth(self.mainView.frame) * idx;
+                imageView.frame = rect;
+                self.mainView.contentSize = CGSizeMake(CGRectGetWidth(self.mainView.frame)*(idx+1), CGRectGetHeight(self.mainView.frame));
+                [self.mainView addSubview:imageView];
+            }];
+
+        }        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",error);
         
@@ -135,7 +151,7 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
         
         [self.tableView.pullToRefreshView stopAnimating];
         [self.tableView reloadData];
-        
+        self.tableView.infiniteScrollingView.enabled = self.videoLists.more;
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",error);
         [self.tableView.pullToRefreshView stopAnimating];
@@ -162,12 +178,15 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
         NSLog(@"%@",result);
         [self.tableView.infiniteScrollingView stopAnimating];
         [self.tableView reloadData];
-        
+        self.tableView.infiniteScrollingView.enabled = self.videoLists.more;
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",error);
         [self.tableView.infiniteScrollingView stopAnimating];
 
     }];
 }
+
+#pragma mark -UIScrollView
+
 
 @end
