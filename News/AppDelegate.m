@@ -26,7 +26,9 @@
             [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"bar_bg"] forBarMetrics:UIBarMetricsDefault];
     }else{
             [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"bar_bg@2x"] forBarMetrics:UIBarMetricsDefault];
+                [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:UITextAttributeTextColor]];
     }
+    
     
 //    UINavigationBar* appearanceNavigationBar = [UINavigationBar appearance];
 //    //the appearanceProxy returns NO, so ask the class directly

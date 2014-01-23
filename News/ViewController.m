@@ -17,7 +17,7 @@
 #import "SVPullToRefresh.h"
 #import "UIImageView+WebCache.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITextFieldDelegate>
 
 @property (nonatomic, strong) PageDatas *videoLists;
 @property (nonatomic, strong) PageDatas *mainLists;
@@ -123,6 +123,7 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
                 [imageView setImageWithURL:[NSURL URLWithString:news.pickurl]];
                 CGRect rect = self.mainView.frame;
                 rect.origin.x = CGRectGetWidth(self.mainView.frame) * idx;
+                rect.origin.y = 0;
                 imageView.frame = rect;
                 self.mainView.contentSize = CGSizeMake(CGRectGetWidth(self.mainView.frame)*(idx+1), CGRectGetHeight(self.mainView.frame));
                 [self.mainView addSubview:imageView];
@@ -188,5 +189,6 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
 
 #pragma mark -UIScrollView
 
+#pragma mark -UITextField
 
 @end

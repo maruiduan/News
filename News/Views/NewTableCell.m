@@ -32,6 +32,7 @@
     _news = news;
     self.title.text = news.title;
     self.subTitle.text = news.synopsis;
+    self.author.text = [NSString stringWithFormat:@"%@ %@",news.author, news.addtime];
     
     [self.newsImageView setImageWithURL:[NSURL URLWithString:news.pickurl]];
     [self setNeedsLayout];

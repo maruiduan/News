@@ -13,6 +13,7 @@
 @property (nonatomic, strong) IBOutlet UIImageView *newsImageView;
 @property (nonatomic, strong) IBOutlet UILabel *title;
 @property (nonatomic, strong) IBOutlet UILabel *subTitle;
+@property (nonatomic, strong) IBOutlet UILabel *author;
 @property (nonatomic, strong) New *news;
 
 @end
