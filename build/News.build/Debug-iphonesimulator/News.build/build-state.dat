@@ -774,9 +774,9 @@ t1390469839
 s445
 
 N/Users/maruiduan/github/News/News/ViewController.m
-c0000000052E1DED1000000000000211E
-t1390534353
-s8478
+c0000000052E1E8D100000000000021E0
+t1390536913
+s8672
 
 N/Users/maruiduan/github/News/News/Views/NewTableCell.h
 c0000000052E0D14B00000000000001F4
@@ -799,11 +799,11 @@ t1390186732
 s333
 
 N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app
-t1390534354
+t1390536917
 s1360
 
 N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app.dSYM
-t1390533931
+t1390534354
 s102
 
 N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/Base.lproj/Main.storyboardc
@@ -815,7 +815,7 @@ t1390466501
 s1034
 
 N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News
-t1390534354
+t1390536917
 s1058940
 
 N/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/PkgInfo
@@ -1058,8 +1058,8 @@ t1390358395
 s71780
 
 N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.o
-t1390534354
-s119416
+t1390536917
+s120820
 
 N/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/main.o
 t1390271997
@@ -1344,7 +1344,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies07b6f6511692b841^460cf7511692b841^---0#1#1#--18"Check dependencies36"4C3CA6BA-66B1-4470-BCCF-E34E659468E1-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesb281e4542092b841^9e3fe5542092b841^---0#1#1#--18"Check dependencies36"6013ED29-459D-4522-B5DB-8FD6A585EC20-
 
 CCompileAssetCatalog /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app /Users/maruiduan/github/News/News/Images.xcassets
 s412159299.565577
@@ -1675,8 +1675,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile
 bD1E6069A-9EA3-4C39-A2DB-634FEBB44B06
 
 CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.o /Users/maruiduan/github/News/News/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s412227153.965945
-e412227154.164369
+s412229716.897258
+e412229717.424167
 r1
 xCompileC
 xbuild/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.o
@@ -1716,8 +1716,8 @@ o/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.h:89:9: warn
 o#pragma message("MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available.")
 o        ^
 o2 warnings generated.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Users/maruiduan/github/News/News/ViewController.m185"CompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.o News/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler6c5cf7511692b841^38142a521692b841^-1117"In file included from /Users/maruiduan/github/News/News/ViewController.m:14:In file included from /Users/maruiduan/github/News/News/Helper/HTTPClient.h:10:/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.h:84:9: warning: SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available. [-W#pragma-messages]#pragma message("SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.")        ^/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.h:89:9: warning: MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available. [-W#pragma-messages]#pragma message("MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available.")        ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@148"SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.-412227154#18446744073709551615#0#2(2@76"In file included from /Users/maruiduan/github/News/News/ViewController.m:14:-412227154#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@57"file:///Users/maruiduan/github/News/News/ViewController.m0000000000000000^13#8#13#8#279#0#21"Apple LLVM 5.0 Notice--2@79"In file included from /Users/maruiduan/github/News/News/Helper/HTTPClient.h:10:-412227154#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@60"file:///Users/maruiduan/github/News/News/Helper/HTTPClient.h0000000000000000^9#8#9#8#173#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@75"file:///Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.h0000000000000000^83#8#83#8#4897#0#25"#pragma message Directive--2@185"MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available.-412227154#18446744073709551615#0#2(2@76"In file included from /Users/maruiduan/github/News/News/ViewController.m:14:-412227154#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@57"file:///Users/maruiduan/github/News/News/ViewController.m0000000000000000^13#8#13#8#279#0#21"Apple LLVM 5.0 Notice--2@79"In file included from /Users/maruiduan/github/News/News/Helper/HTTPClient.h:10:-412227154#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@60"file:///Users/maruiduan/github/News/News/Helper/HTTPClient.h0000000000000000^9#8#9#8#173#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@75"file:///Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.h0000000000000000^88#8#88#8#5129#0#25"#pragma message Directive--0#0#1#-19%DVTDocumentLocation4@57"file:///Users/maruiduan/github/News/News/ViewController.m0000000000000000^3329"CompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.o News/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/maruiduan/github/News    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/maruiduan/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-generated-files.hmap -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-own-target-headers.hmap -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-all-target-headers.hmap -iquote /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-project-headers.hmap -I/Users/maruiduan/github/News/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/DerivedSources/i386 -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/DerivedSources -F/Users/maruiduan/github/News/build/Debug-iphonesimulator -include /var/folders/8m/bt_r_yxd1jqftknf6v2wbjb80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/News-Prefix-brotckdwagfrzzcjgaejfdqpmxdb/News-Prefix.pch -MMD -MT dependencies -MF /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.d --serialize-diagnostics /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.dia -c /Users/maruiduan/github/News/News/ViewController.m -o /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.o36"462E4F69-8CBA-4D89-9F6A-13B53D0E4DC6-
-bAC21218B-827C-4018-BA76-F6209E8E4307
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Users/maruiduan/github/News/News/ViewController.m185"CompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.o News/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler1ccde5542092b841^14966c552092b841^-1117"In file included from /Users/maruiduan/github/News/News/ViewController.m:14:In file included from /Users/maruiduan/github/News/News/Helper/HTTPClient.h:10:/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.h:84:9: warning: SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available. [-W#pragma-messages]#pragma message("SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.")        ^/Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.h:89:9: warning: MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available. [-W#pragma-messages]#pragma message("MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available.")        ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@148"SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.-412229717#18446744073709551615#0#2(2@76"In file included from /Users/maruiduan/github/News/News/ViewController.m:14:-412229717#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@57"file:///Users/maruiduan/github/News/News/ViewController.m0000000000000000^13#8#13#8#279#0#21"Apple LLVM 5.0 Notice--2@79"In file included from /Users/maruiduan/github/News/News/Helper/HTTPClient.h:10:-412229717#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@60"file:///Users/maruiduan/github/News/News/Helper/HTTPClient.h0000000000000000^9#8#9#8#173#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@75"file:///Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.h0000000000000000^83#8#83#8#4897#0#25"#pragma message Directive--2@185"MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available.-412229717#18446744073709551615#0#2(2@76"In file included from /Users/maruiduan/github/News/News/ViewController.m:14:-412229717#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@57"file:///Users/maruiduan/github/News/News/ViewController.m0000000000000000^13#8#13#8#279#0#21"Apple LLVM 5.0 Notice--2@79"In file included from /Users/maruiduan/github/News/News/Helper/HTTPClient.h:10:-412229717#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@60"file:///Users/maruiduan/github/News/News/Helper/HTTPClient.h0000000000000000^9#8#9#8#173#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@75"file:///Users/maruiduan/github/News/News/Vendor/AFNetworking/AFHTTPClient.h0000000000000000^88#8#88#8#5129#0#25"#pragma message Directive--0#0#1#-19%DVTDocumentLocation4@57"file:///Users/maruiduan/github/News/News/ViewController.m0000000000000000^3329"CompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.o News/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/maruiduan/github/News    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/maruiduan/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-generated-files.hmap -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-own-target-headers.hmap -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-all-target-headers.hmap -iquote /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/News-project-headers.hmap -I/Users/maruiduan/github/News/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/DerivedSources/i386 -I/Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/DerivedSources -F/Users/maruiduan/github/News/build/Debug-iphonesimulator -include /var/folders/8m/bt_r_yxd1jqftknf6v2wbjb80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/News-Prefix-brotckdwagfrzzcjgaejfdqpmxdb/News-Prefix.pch -MMD -MT dependencies -MF /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.d --serialize-diagnostics /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.dia -c /Users/maruiduan/github/News/News/ViewController.m -o /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/ViewController.o36"B3EE5254-2009-4AA3-8394-8970E57BFA41-
+b1AFFB236-D1BB-4E39-989C-9688E1571A31
 
 CCompileC build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/main.o /Users/maruiduan/github/News/News/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
@@ -1783,18 +1783,18 @@ CCpResource News/Vendor/ALMoviePlayerController/Images/moviePlay@2x.png build/De
 r0
 
 CGenerateDSYMFile /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app.dSYM /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News
-s412227154.241541
-e412227154.307175
+s412229717.561651
+e412229717.658093
 r1
 xGenerateDSYMFile
 x/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app.dSYM
 x/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Generate /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app.dSYM100"GenerateDSYMFile build/Debug-iphonesimulator/News.app.dSYM build/Debug-iphonesimulator/News.app/Newsfcdf3d521692b841^44a44e521692b841^---0#0#1#-19%DVTDocumentLocation2@78"file:///Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app.dSYM/0000000000000000^577"GenerateDSYMFile build/Debug-iphonesimulator/News.app.dSYM build/Debug-iphonesimulator/News.app/News    cd /Users/maruiduan/github/News    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News -o /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app.dSYM36"7C5F5F4D-4ED9-4E71-A6AF-00E53F09F7E2-
-bAC21218B-827C-4018-BA76-F6209E8E4307
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Generate /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app.dSYM100"GenerateDSYMFile build/Debug-iphonesimulator/News.app.dSYM build/Debug-iphonesimulator/News.app/Newsd4d38f552092b841^1c79a8552092b841^---0#0#1#-19%DVTDocumentLocation2@78"file:///Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app.dSYM/0000000000000000^577"GenerateDSYMFile build/Debug-iphonesimulator/News.app.dSYM build/Debug-iphonesimulator/News.app/News    cd /Users/maruiduan/github/News    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News -o /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app.dSYM36"158BC128-9EB3-4A51-8214-D1B9FE000F04-
+b1AFFB236-D1BB-4E39-989C-9688E1571A31
 
 CLd /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News normal i386
-s412227154.166824
-e412227154.238383
+s412229717.427075
+e412229717.558564
 r1
 xLd
 x/Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News
@@ -1884,12 +1884,12 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/D
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_configuration.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_asl.dylib
 d/usr/lib/libSystem.B.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
 d/usr/lib/system/libcache.dylib
 d/usr/lib/system/libcommonCrypto.dylib
 d/usr/lib/system/libcompiler_rt.dylib
 d/usr/lib/system/libcopyfile.dylib
 d/usr/lib/system/libcorecrypto.dylib
-d/usr/lib/system/libdyld.dylib
 d/usr/lib/system/libkeymgr.dylib
 d/usr/lib/system/liblaunch.dylib
 d/usr/lib/system/libmacho.dylib
@@ -1910,9 +1910,8 @@ d/usr/lib/system/libsystem_pthread.dylib
 d/usr/lib/system/libsystem_sandbox.dylib
 d/usr/lib/system/libunc.dylib
 d/usr/lib/system/libunwind.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Link /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News56"Ld build/Debug-iphonesimulator/News.app/News normal i38601c32a521692b841^74073d521692b841^---0#0#1#--1382"Ld build/Debug-iphonesimulator/News.app/News normal i386    cd /Users/maruiduan/github/News    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/maruiduan/github/News/build/Debug-iphonesimulator -F/Users/maruiduan/github/News/build/Debug-iphonesimulator -filelist /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/News.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.0 -framework QuartzCore -framework MediaPlayer -framework MobileCoreServices -framework Security -framework CFNetwork -framework SystemConfiguration -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/News_dependency_info.dat -o /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News36"E994D80C-EFC0-4C8B-B79D-54E24BBD8090-
-bAC21218B-827C-4018-BA76-F6209E8E4307
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Link /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News56"Ld build/Debug-iphonesimulator/News.app/News normal i38667636d552092b841^e7fe8e552092b841^---0#0#1#--1382"Ld build/Debug-iphonesimulator/News.app/News normal i386    cd /Users/maruiduan/github/News    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/maruiduan/github/News/build/Debug-iphonesimulator -F/Users/maruiduan/github/News/build/Debug-iphonesimulator -filelist /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/News.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.0 -framework QuartzCore -framework MediaPlayer -framework MobileCoreServices -framework Security -framework CFNetwork -framework SystemConfiguration -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/maruiduan/github/News/build/News.build/Debug-iphonesimulator/News.build/Objects-normal/i386/News_dependency_info.dat -o /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/News36"A64710F6-45BA-4AD2-9D1B-9969894BB1F0-
+b1AFFB236-D1BB-4E39-989C-9688E1571A31
 
 CProcessInfoPlistFile /Users/maruiduan/github/News/build/Debug-iphonesimulator/News.app/Info.plist /Users/maruiduan/github/News/News/News-Info.plist
 s412159301.463209

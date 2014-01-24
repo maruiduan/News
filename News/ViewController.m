@@ -65,10 +65,10 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
     // Dispose of any resources that can be recreated.
 }
 
-- (void)pushDetailController:(New *)news
+- (void)pushDetailController:(UIButton *)button
 {
     NewDetailController *newController = NewDetailController.new;
-    newController.news = news;
+    newController.news = self.mainLists.data[button.tag];
     [self.navigationController pushViewController:newController animated:YES];
 }
 
@@ -133,6 +133,8 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
                 button.frame = rect;
                 self.mainView.contentSize = CGSizeMake(CGRectGetWidth(self.mainView.frame)*(idx+1), CGRectGetHeight(self.mainView.frame));
                 [self.mainView addSubview:button];
+                button.tag = idx;
+                [button addTarget:self action:@selector(pushDetailController:) forControlEvents:UIControlEventTouchUpInside];
             }];
 
         }        
