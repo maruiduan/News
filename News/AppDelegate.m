@@ -29,6 +29,12 @@
                 [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:UITextAttributeTextColor]];
     }
     
+    // Change the appearance of back button
+//    UIImage *backButtonImage = [[UIImage imageNamed:@"arrow"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 13, 0, 6)];
+//    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//        [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+
+    
     
 //    UINavigationBar* appearanceNavigationBar = [UINavigationBar appearance];
 //    //the appearanceProxy returns NO, so ask the class directly

@@ -15,8 +15,7 @@
 #import "NSString+JSON.h"
 #import "JSONKit.h"
 #import "SVPullToRefresh.h"
-#import "UIImageView+WebCache.h"
-
+#import "UIButton+WebCache.h"
 @interface ViewController ()<UITextFieldDelegate>
 
 @property (nonatomic, strong) PageDatas *videoLists;
@@ -64,6 +63,13 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)pushDetailController:(New *)news
+{
+    NewDetailController *newController = NewDetailController.new;
+    newController.news = news;
+    [self.navigationController pushViewController:newController animated:YES];
 }
 
 #pragma mark - UITableViewDataSource
@@ -119,14 +125,14 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
             }];
             
             [self.mainLists.data enumerateObjectsUsingBlock:^(New *news, NSUInteger idx, BOOL *stop) {
-                UIImageView *imageView = UIImageView.new;
-                [imageView setImageWithURL:[NSURL URLWithString:news.pickurl]];
+                UIButton *button = UIButton.new;
+                [button setImageWithURL:[NSURL URLWithString:news.pickurl]];
                 CGRect rect = self.mainView.frame;
                 rect.origin.x = CGRectGetWidth(self.mainView.frame) * idx;
                 rect.origin.y = 0;
-                imageView.frame = rect;
+                button.frame = rect;
                 self.mainView.contentSize = CGSizeMake(CGRectGetWidth(self.mainView.frame)*(idx+1), CGRectGetHeight(self.mainView.frame));
-                [self.mainView addSubview:imageView];
+                [self.mainView addSubview:button];
             }];
 
         }        

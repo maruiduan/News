@@ -14,7 +14,7 @@ dependencies: /Users/maruiduan/github/News/News/ViewController.m \
   /Users/maruiduan/github/News/News/Vendor/SVPullRresh/SVPullToRefresh.h \
   /Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVPullToRefresh.h \
   /Users/maruiduan/github/News/News/Vendor/SVPullRresh/UIScrollView+SVInfiniteScrolling.h \
-  /Users/maruiduan/github/News/News/Vendor/SDWebImage/UIImageView+WebCache.h \
+  /Users/maruiduan/github/News/News/Vendor/SDWebImage/UIButton+WebCache.h \
   /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageCompat.h \
   /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageManagerDelegate.h \
   /Users/maruiduan/github/News/News/Vendor/SDWebImage/SDWebImageManager.h \
