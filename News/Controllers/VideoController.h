@@ -14,7 +14,4 @@
 
 - (instancetype)initWithURL:(NSString *)url;
 
-- (IBAction)dismiss;
-
-
 @end

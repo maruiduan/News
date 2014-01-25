@@ -25,7 +25,7 @@
     return self;
 }
 
-- (void)back:(id)sender
+- (void)popBack
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -34,11 +34,13 @@
 {
     [super viewDidLoad];
     
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
     backButton.frame = CGRectMake(0.0, 0.0, 40.0, 27.0);
-    [backButton setImage:[UIImage imageNamed:@"arrow"] forState:UIControlStateNormal];
-    [backButton setImage:[UIImage imageNamed:@"arrow_press"] forState:UIControlStateSelected];
-    [backButton addTarget:self action:@selector(back:) forControlEvents:UIControlEventTouchUpInside];
+    [backButton setImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
+    [backButton setImage:[UIImage imageNamed:@"back_press.png"] forState:UIControlStateSelected];
+    [backButton addTarget:self action:@selector(popBack) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
     temporaryBarButtonItem.style = UIBarButtonItemStylePlain;
     self.navigationItem.leftBarButtonItem=temporaryBarButtonItem;

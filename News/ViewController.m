@@ -16,54 +16,65 @@
 #import "JSONKit.h"
 #import "SVPullToRefresh.h"
 #import "UIButton+WebCache.h"
+#import "NewCollectionCell.h"
 
-@interface ViewController ()<UITextFieldDelegate, UIAlertViewDelegate>
+@interface ViewController ()<UITextFieldDelegate,UIScrollViewDelegate>
 
 @property (nonatomic, strong) PageDatas *videoLists;
 @property (nonatomic, strong) PageDatas *mainLists;
 
-@property (nonatomic, strong) StyledPageControl *pangeControl;
+@property (nonatomic, strong) StyledPageControl *pageControl;
 @property (nonatomic, strong) UIActionSheet *pickerViewPopup;
+@property (nonatomic, strong) UIDatePicker *pickerView;
 
 @property (nonatomic) BOOL isSearch;
 
 @end
 
 static NSString *NewTableCellIdentifier = @"NewTableCell";
+static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
 
 
 @implementation ViewController
-
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    _isSearch = YES;
+    self.navigationItem.leftBarButtonItem = nil;
     
-    StyledPageControl *pageControl = [[StyledPageControl alloc] init];
-    [pageControl setPageControlStyle:PageControlStyleDefault];
-    [pageControl setNumberOfPages:10];
-    [pageControl setCurrentPage:5];
-    [pageControl setGapWidth:5];
-    [pageControl setDiameter:9];
+    _isSearch = NO;
+    
+    _pageControl = [[StyledPageControl alloc] init];
+    [_pageControl setPageControlStyle:PageControlStyleDefault];
+    [_pageControl setNumberOfPages:4];
+    [_pageControl setCurrentPage:1];
+    [_pageControl setGapWidth:5];
+    [_pageControl setDiameter:9];
 //    [pageControl setPageControlStyle:PageControlStyleThumb];
 //    [pageControl setThumbImage:[UIImage imageNamed:@"pagecontrol-thumb-normal.png"]];
 //    [pageControl setSelectedThumbImage:[UIImage imageNamed:@"pagecontrol-thumb-selected.png"]];
 //    pageControl.con
-    [self.view addSubview:pageControl];
+    [self.view addSubview:_pageControl];
+    
+    CGFloat height = 20;
+    CGFloat width = 80;
+    CGRect frame = CGRectMake(CGRectGetMaxX(self.mainView.frame)-width, CGRectGetMaxY(self.mainView.frame)-height, width, height);
+    _pageControl.frame = frame;
+    _pageControl.hidden = YES;
+    
     
     [self requestMainData];
     [self requestVideoList];
     
-    __block ViewController *weak = self;
+//    __block ViewController *weak = self;
 //    [self.tableView addPullToRefreshWithActionHandler:^{
 //        [weak requestVideoList];
 //    }];
     
-    [self.tableView addInfiniteScrollingWithActionHandler:^{
-        [weak requestMoreVideoList];
-    }];
+//    [self.tableView addInfiniteScrollingWithActionHandler:^{
+//        [weak requestMoreVideoList];
+//    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -152,6 +163,8 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
                 button.tag = idx;
                 [button addTarget:self action:@selector(pushDetailController:) forControlEvents:UIControlEventTouchUpInside];
             }];
+            
+            self.pageControl.hidden = NO;
 
         }        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -173,10 +186,15 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
         
         self.videoLists = [PageDatas pageDatasWithJSON:resultDict parserClass:[New class]];
         NSLog(@"%@",result);
-        
-        [self.tableView.pullToRefreshView stopAnimating];
-        [self.tableView reloadData];
-        self.tableView.infiniteScrollingView.enabled = self.videoLists.more;
+
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+            [self.collectionView reloadData];
+
+        }else{
+            [self.tableView.infiniteScrollingView stopAnimating];
+            [self.tableView reloadData];
+            self.tableView.infiniteScrollingView.enabled = self.videoLists.more;
+        }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",error);
         [self.tableView.pullToRefreshView stopAnimating];
@@ -216,22 +234,33 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
     NSString *da = date;
     if ([date isEqualToString:@"选择时间"]) {
         da = @"";
+        if (![title length]) {
+            return;
+        }
     }
     
-    NSDictionary *parametre = @{@"requestcommand":@"video_list",
-                                @"title":title,
-                                @"times":da,
-                                @"pagesize":@"30",
-                                @"pagenumber":@(page)};
+    NSDictionary *parametre = [NSMutableDictionary dictionaryWithDictionary:@{@"requestcommand":@"video_list",
+                                                                              @"pagesize":@"30",
+                                                                              @"pagenumber":@(page)}];
+    if ([title length]) {
+        [parametre setValue:title forKey:@"title"];
+    }
+    if ([da length]) {
+        [parametre setValue:da forKey:@"times"];
+    }
+    
+    
     [[HTTPClient sharedClient] postParameters:parametre success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSString *result = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSDictionary *resultDict = [result JSONDictionary];
         
         self.videoLists = [PageDatas pageDatasWithJSON:resultDict parserClass:[New class]];
         NSLog(@"%@",result);
+        
         [self.tableView.infiniteScrollingView stopAnimating];
         [self.tableView reloadData];
         self.tableView.infiniteScrollingView.enabled = self.videoLists.more;
+
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",error);
         [self.tableView.infiniteScrollingView stopAnimating];
@@ -242,13 +271,17 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
 
 #pragma mark -UIScrollView
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    int page = scrollView.contentOffset.x/320.f;
+    _pageControl.currentPage = page;
+}
+
 #pragma mark -UITextField
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    if (!textField.text.length) {
-    }else{
-        [self requestSearchTitle:textField.text date:self.dateButton.titleLabel.text page:1];
-    }
+    [self requestSearchTitle:textField.text date:self.dateButton.titleLabel.text page:1];
+
     [textField resignFirstResponder];
     return YES;
 }
@@ -258,11 +291,11 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
 {
     _pickerViewPopup = [[UIActionSheet alloc] initWithTitle:nil delegate:nil cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil];
     
-    UIDatePicker *pickerView = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 44, 0, 0)];
-    pickerView.datePickerMode = UIDatePickerModeDate;
-    pickerView.hidden = NO;
-    [pickerView setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"]];
-    pickerView.date = [NSDate date];
+    _pickerView = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 44, 0, 0)];
+    _pickerView.datePickerMode = UIDatePickerModeDate;
+    _pickerView.hidden = NO;
+    [_pickerView setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"]];
+    _pickerView.date = [NSDate date];
     
     UIToolbar *pickerToolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
     pickerToolbar.barStyle = UIBarStyleBlackOpaque;
@@ -282,7 +315,7 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
     [pickerToolbar setItems:barItems animated:YES];
     
     [_pickerViewPopup addSubview:pickerToolbar];
-    [_pickerViewPopup addSubview:pickerView];
+    [_pickerViewPopup addSubview:_pickerView];
     [_pickerViewPopup showInView:self.view];
     [_pickerViewPopup setBounds:CGRectMake(0,0,320, 464)];
 }
@@ -290,7 +323,7 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
 - (void)doneButtonPressed{
     [_pickerViewPopup dismissWithClickedButtonIndex:1 animated:YES];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    NSDate *date = [NSDate date];
+    NSDate *date = _pickerView.date;
     [formatter setDateFormat:@"yyyy-MM-dd"];
     NSString *str=[formatter stringFromDate:date];
     [self.dateButton setTitle:str forState:UIControlStateNormal];
@@ -299,5 +332,26 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
 
 - (void)cancelButtonPressed{
     [_pickerViewPopup dismissWithClickedButtonIndex:1 animated:YES];
+    [self.dateButton setTitle:@"选择时间" forState:UIControlStateNormal];
 }
+
+
+#pragma mark -UICollectionViewDelegate
+
+- (NSInteger)collectionView:( UICollectionView *)collectionView numberOfItemsInSection:( NSInteger )section {
+    return [self.videoLists.data count];
+}
+
+- ( NSInteger )numberOfSectionsInCollectionView:( UICollectionView *)collectionView {
+    return 1 ;
+}
+
+- ( UICollectionViewCell *)collectionView:( UICollectionView *)collectionView cellForItemAtIndexPath:( NSIndexPath *)indexPath {
+    
+    NewCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NewCollectionCellIdentifier forIndexPath:indexPath];
+    New *news = [self.videoLists.data objectAtIndex:indexPath.row];
+    cell.news = news;
+    return cell;
+}
+
 @end

@@ -39,6 +39,13 @@
 }
 
 
+- (void)back
+{
+    [self.moviePlayer stop];
+    self.moviePlayer.delegate = nil;
+    [super popBack];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

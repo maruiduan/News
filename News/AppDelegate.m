@@ -22,18 +22,20 @@
     Reachability *hostReach = [Reachability reachabilityWithHostName:@"www.baidu.com"];
     [hostReach startNotifier];
     
-    if ([[UIDevice currentDevice].systemVersion floatValue]<7) {
-            [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"bar_bg"] forBarMetrics:UIBarMetricsDefault];
+    
+
+    
+    if ([[UIDevice currentDevice].systemVersion floatValue]>=7) {
+        [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName]];
+        
+            [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"bar_bg@2x.png"] forBarMetrics:UIBarMetricsDefault];
+
     }else{
-            [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"bar_bg@2x"] forBarMetrics:UIBarMetricsDefault];
-                [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:UITextAttributeTextColor]];
-        
-        UIImage *backButtonImage = [[UIImage imageNamed:@"arrow"] resizableImageWithCapInsets:UIEdgeInsetsMake(5, 10, 5, 0)];
-        [[UINavigationBar appearance] setBackIndicatorImage:backButtonImage];
-        [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:backButtonImage];
-        
-        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+            [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"bar_bg.png"] forBarMetrics:UIBarMetricsDefault];
     }
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+
 
     // Change the appearance of back button
 //    UIImage *backButtonImage = [[UIImage imageNamed:@"arrow"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 13, 0, 6)];
