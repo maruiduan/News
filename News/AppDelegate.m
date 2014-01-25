@@ -27,8 +27,14 @@
     }else{
             [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"bar_bg@2x"] forBarMetrics:UIBarMetricsDefault];
                 [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:UITextAttributeTextColor]];
+        
+        UIImage *backButtonImage = [[UIImage imageNamed:@"arrow"] resizableImageWithCapInsets:UIEdgeInsetsMake(5, 10, 5, 0)];
+        [[UINavigationBar appearance] setBackIndicatorImage:backButtonImage];
+        [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:backButtonImage];
+        
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     }
-    
+
     // Change the appearance of back button
 //    UIImage *backButtonImage = [[UIImage imageNamed:@"arrow"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 13, 0, 6)];
 //    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];

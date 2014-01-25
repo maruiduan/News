@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "New.h"
 
-@interface NewDetailController : UIViewController
+@interface NewDetailController : BaseViewController
 
 @property (nonatomic, strong) New *news;
 @property (nonatomic, strong) IBOutlet UILabel *newsTitle;

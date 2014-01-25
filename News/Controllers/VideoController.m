@@ -139,14 +139,4 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-- (IBAction)dismiss
-{
-    [self dismissViewControllerAnimated:YES completion:^{
-        
-    }];
-    [self.moviePlayer setDelegate:nil];
-}
-
 @end

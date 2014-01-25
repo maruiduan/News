@@ -16,12 +16,17 @@
 #import "JSONKit.h"
 #import "SVPullToRefresh.h"
 #import "UIButton+WebCache.h"
-@interface ViewController ()<UITextFieldDelegate>
+
+@interface ViewController ()<UITextFieldDelegate, UIAlertViewDelegate>
 
 @property (nonatomic, strong) PageDatas *videoLists;
 @property (nonatomic, strong) PageDatas *mainLists;
 
 @property (nonatomic, strong) StyledPageControl *pangeControl;
+@property (nonatomic, strong) UIActionSheet *pickerViewPopup;
+
+@property (nonatomic) BOOL isSearch;
+
 @end
 
 static NSString *NewTableCellIdentifier = @"NewTableCell";
@@ -33,6 +38,8 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _isSearch = YES;
     
     StyledPageControl *pageControl = [[StyledPageControl alloc] init];
     [pageControl setPageControlStyle:PageControlStyleDefault];
@@ -67,9 +74,10 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
 
 - (void)pushDetailController:(UIButton *)button
 {
-    NewDetailController *newController = NewDetailController.new;
-    newController.news = self.mainLists.data[button.tag];
-    [self.navigationController pushViewController:newController animated:YES];
+//    NewDetailController *newController = NewDetailController.new;
+//    newController.news = self.mainLists.data[button.tag];
+//    [self.navigationController pushViewController:newController animated:YES];
+    [self performSegueWithIdentifier:@"NewDetailController" sender:self.mainLists.data[button.tag]];
 }
 
 #pragma mark - UITableViewDataSource
@@ -100,9 +108,17 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"NewDetailController"]) {
-        New *news = [(NewTableCell *)sender news];
-        NewDetailController *newController = segue.destinationViewController;
-        newController.news = news;
+        if ([sender isKindOfClass:[New class]]) {
+            New *news = sender;
+            NewDetailController *newController = segue.destinationViewController;
+            newController.news = news;
+        }else{
+            New *news = [(NewTableCell *)sender news];
+            NewDetailController *newController = segue.destinationViewController;
+            newController.news = news;
+        }
+    }else if ([segue.identifier isEqualToString:@"DatePickerController"]){
+
     }
 }
 
@@ -147,10 +163,10 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
 
 - (void)requestVideoList
 {
+    _isSearch = NO;
     NSDictionary *parametre = @{@"requestcommand":@"video_list",
                                 @"pagesize":@"30",
-                                @"pagenumber":@(1),
-                                @"type":@(1)};
+                                @"pagenumber":@(0)};
     [[HTTPClient sharedClient] postParameters:parametre success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSString *result = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSDictionary *resultDict = [result JSONDictionary];
@@ -177,8 +193,7 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
     }
     NSDictionary *parametre = @{@"requestcommand":@"video_list",
                                 @"pagesize":@"30",
-                                @"pagenumber":@(page),
-                                @"type":@(1)};
+                                @"pagenumber":@(page)};
     [[HTTPClient sharedClient] postParameters:parametre success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSString *result = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSDictionary *resultDict = [result JSONDictionary];
@@ -197,18 +212,17 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
 
 - (void)requestSearchTitle:(NSString *)title date:(NSString *)date page:(int)page
 {
-    if (self.videoLists.more) {
-        page = self.videoLists.page + 1;
-    }else{
-        return;
+    _isSearch = YES;
+    NSString *da = date;
+    if ([date isEqualToString:@"选择时间"]) {
+        da = @"";
     }
     
     NSDictionary *parametre = @{@"requestcommand":@"video_list",
                                 @"title":title,
-                                @"times":date,
+                                @"times":da,
                                 @"pagesize":@"30",
-                                @"pagenumber":@(page),
-                                @"type":@(1)};
+                                @"pagenumber":@(page)};
     [[HTTPClient sharedClient] postParameters:parametre success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSString *result = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSDictionary *resultDict = [result JSONDictionary];
@@ -229,13 +243,61 @@ static NSString *NewTableCellIdentifier = @"NewTableCell";
 #pragma mark -UIScrollView
 
 #pragma mark -UITextField
-
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     if (!textField.text.length) {
-        [textField resignFirstResponder];
+    }else{
+        [self requestSearchTitle:textField.text date:self.dateButton.titleLabel.text page:1];
     }
+    [textField resignFirstResponder];
     return YES;
 }
 
+#pragma mark -Action
+- (IBAction)select:(id)sender
+{
+    _pickerViewPopup = [[UIActionSheet alloc] initWithTitle:nil delegate:nil cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil];
+    
+    UIDatePicker *pickerView = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 44, 0, 0)];
+    pickerView.datePickerMode = UIDatePickerModeDate;
+    pickerView.hidden = NO;
+    [pickerView setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"]];
+    pickerView.date = [NSDate date];
+    
+    UIToolbar *pickerToolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+    pickerToolbar.barStyle = UIBarStyleBlackOpaque;
+    [pickerToolbar sizeToFit];
+    
+    NSMutableArray *barItems = [[NSMutableArray alloc] init];
+    
+    UIBarButtonItem *cancelBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelButtonPressed)];
+    [barItems addObject:cancelBtn];
+    
+    UIBarButtonItem *flexSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    [barItems addObject:flexSpace];
+    
+    UIBarButtonItem *doneBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneButtonPressed)];
+    [barItems addObject:doneBtn];
+    
+    [pickerToolbar setItems:barItems animated:YES];
+    
+    [_pickerViewPopup addSubview:pickerToolbar];
+    [_pickerViewPopup addSubview:pickerView];
+    [_pickerViewPopup showInView:self.view];
+    [_pickerViewPopup setBounds:CGRectMake(0,0,320, 464)];
+}
+
+- (void)doneButtonPressed{
+    [_pickerViewPopup dismissWithClickedButtonIndex:1 animated:YES];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    NSDate *date = [NSDate date];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
+    NSString *str=[formatter stringFromDate:date];
+    [self.dateButton setTitle:str forState:UIControlStateNormal];
+}
+
+
+- (void)cancelButtonPressed{
+    [_pickerViewPopup dismissWithClickedButtonIndex:1 animated:YES];
+}
 @end

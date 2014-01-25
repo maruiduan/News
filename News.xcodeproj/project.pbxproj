@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC42FAE218935ABB001B362E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC42FAE118935ABB001B362E /* BaseViewController.m */; };
 		CC4E803D188AA1210091FAD6 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4E803C188AA1210091FAD6 /* HTTPClient.m */; };
 		CC4E8040188AA70B0091FAD6 /* NewTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4E803F188AA70B0091FAD6 /* NewTableCell.m */; };
 		CC617FAA188A739100370F27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC617FA9188A739100370F27 /* Foundation.framework */; };
@@ -93,6 +94,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC42FAE018935ABB001B362E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		CC42FAE118935ABB001B362E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		CC42FAE618937C04001B362E /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		CC4E803B188AA1210091FAD6 /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
 		CC4E803C188AA1210091FAD6 /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
 		CC4E803E188AA70B0091FAD6 /* NewTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTableCell.h; sourceTree = "<group>"; };
@@ -338,6 +342,8 @@
 				CC9BF0CC188C0B9C005C444A /* NewDetailController.m */,
 				CCBF2700188C1FB6008D332F /* VideoController.h */,
 				CCBF2701188C1FB6008D332F /* VideoController.m */,
+				CC42FAE018935ABB001B362E /* BaseViewController.h */,
+				CC42FAE118935ABB001B362E /* BaseViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -386,6 +392,7 @@
 				CC4E803C188AA1210091FAD6 /* HTTPClient.m */,
 				CC8A35B0188CC99A005CBB37 /* NSString+JSON.h */,
 				CC8A35B1188CC99A005CBB37 /* NSString+JSON.m */,
+				CC42FAE618937C04001B362E /* Macro.h */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -704,6 +711,7 @@
 				CC617FB6188A739200370F27 /* main.m in Sources */,
 				CC617FF8188A775200370F27 /* AFHTTPClient.m in Sources */,
 				CC618020188A7CFF00370F27 /* SDImageCache.m in Sources */,
+				CC42FAE218935ABB001B362E /* BaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

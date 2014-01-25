@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VideoController : UIViewController
+@interface VideoController : BaseViewController
 
 @property (nonatomic, strong) NSString *url;
 
