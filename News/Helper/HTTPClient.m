@@ -8,7 +8,7 @@
 
 #import "HTTPClient.h"
 #import "AFJSONRequestOperation.h"
-#import "JSONKit.h"
+#import "NSDictionary+JSON.h"
 
 static NSString * const kAFAppJAVAAPIBaseURLString = @"http://test.12326.com:8100";
 

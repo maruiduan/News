@@ -10,5 +10,5 @@
 #define News_Macro_h
 
 #define IS_IPAD UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
-
+#define iS_IOS7 ([[UIDevice currentDevice].systemVersion floatValue]>=7)
 #endif

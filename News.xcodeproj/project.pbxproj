@@ -72,7 +72,6 @@
 		CC750CCF188AE893004E1641 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = CC750CCB188AE893004E1641 /* UIScrollView+SVInfiniteScrolling.m */; };
 		CC750CD0188AE893004E1641 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = CC750CCD188AE893004E1641 /* UIScrollView+SVPullToRefresh.m */; };
 		CC8A35B2188CC99A005CBB37 /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8A35B1188CC99A005CBB37 /* NSString+JSON.m */; };
-		CC8A35B9188CCCBF005CBB37 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8A35B8188CCCBF005CBB37 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CC8A35BD188CFDEB005CBB37 /* StyledPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8A35BC188CFDEB005CBB37 /* StyledPageControl.m */; };
 		CC9BF0CD188C0B9C005C444A /* NewDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9BF0CC188C0B9C005C444A /* NewDetailController.m */; };
 		CCBF26E8188C1D3A008D332F /* ALAirplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBF26D0188C1D39008D332F /* ALAirplayView.m */; };
@@ -102,6 +101,7 @@
 		CCF55C121890B4C200555E6F /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF55C0E1890B4C200555E6F /* UIImage+Resize.m */; };
 		CCF55C131890B4C200555E6F /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF55C101890B4C200555E6F /* UIImage+RoundedCorner.m */; };
 		CCF57CF41894AAB600A02DF3 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF57CF31894AAB600A02DF3 /* BaseNavigationController.m */; };
+		CCF57D221895199700A02DF3 /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF57D211895199700A02DF3 /* NSDictionary+JSON.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,8 +221,6 @@
 		CC750CCD188AE893004E1641 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
 		CC8A35B0188CC99A005CBB37 /* NSString+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSON.h"; sourceTree = "<group>"; };
 		CC8A35B1188CC99A005CBB37 /* NSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSON.m"; sourceTree = "<group>"; };
-		CC8A35B7188CCCBF005CBB37 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		CC8A35B8188CCCBF005CBB37 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		CC8A35BB188CFDEB005CBB37 /* StyledPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyledPageControl.h; sourceTree = "<group>"; };
 		CC8A35BC188CFDEB005CBB37 /* StyledPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyledPageControl.m; sourceTree = "<group>"; };
 		CC9BF0CB188C0B9C005C444A /* NewDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDetailController.h; sourceTree = "<group>"; };
@@ -263,6 +261,8 @@
 		CCF55C101890B4C200555E6F /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 		CCF57CF21894AAB500A02DF3 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		CCF57CF31894AAB600A02DF3 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		CCF57D201895199700A02DF3 /* NSDictionary+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
+		CCF57D211895199700A02DF3 /* NSDictionary+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,13 +295,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CC42FB2B1893820D001B362E /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = iPad;
-			sourceTree = "<group>";
-		};
 		CC42FB3118939CD2001B362E /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,7 +368,6 @@
 		CC617FAF188A739200370F27 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				CC42FB2B1893820D001B362E /* iPad */,
 				CC617FE0188A765500370F27 /* Models */,
 				CC617FE2188A765500370F27 /* Views */,
 				CC617FDE188A765500370F27 /* Controllers */,
@@ -450,7 +442,6 @@
 			isa = PBXGroup;
 			children = (
 				CC8A35BA188CFDEB005CBB37 /* StylePageControl */,
-				CC8A35B6188CCCBF005CBB37 /* JSONKit */,
 				CCBF26CE188C1D39008D332F /* ALMoviePlayerController */,
 				CC750CC5188AE893004E1641 /* Reachability */,
 				CC750CC8188AE893004E1641 /* SVPullRresh */,
@@ -483,6 +474,8 @@
 				CC4E803C188AA1210091FAD6 /* HTTPClient.m */,
 				CC8A35B0188CC99A005CBB37 /* NSString+JSON.h */,
 				CC8A35B1188CC99A005CBB37 /* NSString+JSON.m */,
+				CCF57D201895199700A02DF3 /* NSDictionary+JSON.h */,
+				CCF57D211895199700A02DF3 /* NSDictionary+JSON.m */,
 				CC42FAE618937C04001B362E /* Macro.h */,
 			);
 			path = Helper;
@@ -569,15 +562,6 @@
 				CC750CCD188AE893004E1641 /* UIScrollView+SVPullToRefresh.m */,
 			);
 			path = SVPullRresh;
-			sourceTree = "<group>";
-		};
-		CC8A35B6188CCCBF005CBB37 /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				CC8A35B7188CCCBF005CBB37 /* JSONKit.h */,
-				CC8A35B8188CCCBF005CBB37 /* JSONKit.m */,
-			);
-			path = JSONKit;
 			sourceTree = "<group>";
 		};
 		CC8A35BA188CFDEB005CBB37 /* StylePageControl */ = {
@@ -783,7 +767,6 @@
 			files = (
 				CC750CCE188AE893004E1641 /* Reachability.m in Sources */,
 				CCBF26EB188C1D3A008D332F /* ALMoviePlayerControls.m in Sources */,
-				CC8A35B9188CCCBF005CBB37 /* JSONKit.m in Sources */,
 				CC617FFA188A775200370F27 /* AFImageRequestOperation.m in Sources */,
 				CCF57CF41894AAB600A02DF3 /* BaseNavigationController.m in Sources */,
 				CC617FC0188A739200370F27 /* ViewController.m in Sources */,
@@ -805,6 +788,7 @@
 				CCF55C111890B4C200555E6F /* UIImage+Alpha.m in Sources */,
 				CC618022188A7CFF00370F27 /* SDWebImageDownloader.m in Sources */,
 				CC618029188A7F2E00370F27 /* New.m in Sources */,
+				CCF57D221895199700A02DF3 /* NSDictionary+JSON.m in Sources */,
 				CC8A35BD188CFDEB005CBB37 /* StyledPageControl.m in Sources */,
 				CC618000188A775200370F27 /* UIImageView+AFNetworking.m in Sources */,
 				CCF55C121890B4C200555E6F /* UIImage+Resize.m in Sources */,

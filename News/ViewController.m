@@ -13,7 +13,6 @@
 #import "StyledPageControl.h"
 #import "HTTPClient.h"
 #import "NSString+JSON.h"
-#import "JSONKit.h"
 #import "SVPullToRefresh.h"
 #import "UIButton+WebCache.h"
 #import "NewCollectionCell.h"
@@ -60,7 +59,14 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
     
     CGFloat height = 20;
     CGFloat width = 80;
-    CGRect frame = CGRectMake(CGRectGetMaxX(self.mainView.frame)-width, CGRectGetMaxY(self.mainView.frame)-height, width, height);
+    
+    
+    CGFloat delta = 0;
+    if (!iS_IOS7) {
+        delta = 20;
+    }
+    
+    CGRect frame = CGRectMake(CGRectGetMaxX(self.mainView.frame)-width, CGRectGetMaxY(self.mainView.frame)-height-delta, width, height);
     _pageControl.frame = frame;
     _pageControl.hidden = YES;
     
@@ -390,22 +396,28 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
     return cell;
 }
 
+
+- (void)refreshMainView
+{
+    [[self.mainView subviews] enumerateObjectsUsingBlock:^(UIButton *button, NSUInteger idx, BOOL *stop) {
+        if ([button isKindOfClass:[UIButton class]]) {
+            CGRect rect = CGRectMake(0, 0, 768, 242);
+            rect.origin.x = CGRectGetWidth(self.mainView.frame) * idx;
+            button.frame = rect;
+            self.mainView.contentSize = CGSizeMake(768*(idx+1),242);
+            rect = self.mainView.frame;
+            rect.size.width = 768;
+            self.mainView.frame = rect;
+        }
+    }];
+}
+
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
     if (toInterfaceOrientation == UIDeviceOrientationLandscapeRight || toInterfaceOrientation == UIDeviceOrientationLandscapeLeft) {
         self.pageControl.hidden = YES;
     }else{
         self.pageControl.hidden = NO;
-        [[self.mainView subviews] enumerateObjectsUsingBlock:^(UIButton *button, NSUInteger idx, BOOL *stop) {
-            if ([button isKindOfClass:[UIButton class]]) {
-                CGRect rect = CGRectMake(0, 0, 768, 242);
-                rect.origin.x = CGRectGetWidth(self.mainView.frame) * idx;
-                button.frame = rect;
-                self.mainView.contentSize = CGSizeMake(768*(idx+1),242);
-                rect = self.mainView.frame;
-                rect.size.width = 768;
-                self.mainView.frame = rect;
-            }
-        }];
+        [self refreshMainView];
     }
 }
 
