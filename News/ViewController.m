@@ -62,8 +62,10 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
     
     
     CGFloat delta = 0;
-    if (!iS_IOS7) {
-        delta = 20;
+    if (IS_IPAD) {
+        if (!iS_IOS7) {
+            delta = 20;
+        }
     }
     
     CGRect frame = CGRectMake(CGRectGetMaxX(self.mainView.frame)-width, CGRectGetMaxY(self.mainView.frame)-height-delta, width, height);
