@@ -213,7 +213,7 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
 
 - (void)requestMoreVideoList
 {
-    int page = 1;
+    NSInteger page = 1;
     if (self.videoLists.more) {
         page = self.videoLists.page + 1;
     }else{
