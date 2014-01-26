@@ -165,8 +165,9 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
                 [button addTarget:self action:@selector(pushDetailController:) forControlEvents:UIControlEventTouchUpInside];
             }];
             
-            self.pageControl.hidden = NO;
-
+            if (self.interfaceOrientation == UIDeviceOrientationPortrait || self.interfaceOrientation == UIDeviceOrientationPortraitUpsideDown) {
+                self.pageControl.hidden = NO;
+            }
         }        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",error);
@@ -240,9 +241,6 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
     NSString *da = date;
     if ([date isEqualToString:@"选择时间"]) {
         da = @"";
-        if (![title length]) {
-            return;
-        }
     }
     
     NSDictionary *parametre = [NSMutableDictionary dictionaryWithDictionary:@{@"requestcommand":@"video_list",
@@ -284,8 +282,11 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    int page = scrollView.contentOffset.x/320.f;
-    _pageControl.currentPage = page;
+    if (scrollView == self.mainView) {
+        int page = scrollView.contentOffset.x/scrollView.frame.size.width;
+        _pageControl.currentPage = page;
+    }
+
 }
 
 #pragma mark -UITextField
@@ -387,6 +388,25 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
     New *news = [self.videoLists.data objectAtIndex:indexPath.row];
     cell.news = news;
     return cell;
+}
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    if (toInterfaceOrientation == UIDeviceOrientationLandscapeRight || toInterfaceOrientation == UIDeviceOrientationLandscapeLeft) {
+        self.pageControl.hidden = YES;
+    }else{
+        self.pageControl.hidden = NO;
+        [[self.mainView subviews] enumerateObjectsUsingBlock:^(UIButton *button, NSUInteger idx, BOOL *stop) {
+            if ([button isKindOfClass:[UIButton class]]) {
+                CGRect rect = CGRectMake(0, 0, 768, 242);
+                rect.origin.x = CGRectGetWidth(self.mainView.frame) * idx;
+                button.frame = rect;
+                self.mainView.contentSize = CGSizeMake(768*(idx+1),242);
+                rect = self.mainView.frame;
+                rect.size.width = 768;
+                self.mainView.frame = rect;
+            }
+        }];
+    }
 }
 
 @end

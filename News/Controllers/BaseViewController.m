@@ -55,13 +55,13 @@
 
 - (BOOL)shouldAutorotate
 {
-    return NO;
+    return (IS_IPAD);
 }
 
 - (NSUInteger)supportedInterfaceOrientations
 {
-    
-    return UIInterfaceOrientationMaskPortrait;
+    int orientations = IS_IPAD ? UIInterfaceOrientationMaskAll :UIInterfaceOrientationMaskPortrait;
+    return orientations;
 }
 
 @end
