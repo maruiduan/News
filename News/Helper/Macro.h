@@ -9,6 +9,6 @@
 #ifndef News_Macro_h
 #define News_Macro_h
 
-
+#define IS_IPAD UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
 
 #endif

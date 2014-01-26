@@ -26,6 +26,7 @@
 @property (nonatomic, strong) StyledPageControl *pageControl;
 @property (nonatomic, strong) UIActionSheet *pickerViewPopup;
 @property (nonatomic, strong) UIDatePicker *pickerView;
+@property (nonatomic, strong) UIPopoverController *popOverController;
 
 @property (nonatomic) BOOL isSearch;
 
@@ -218,9 +219,14 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
         
         self.videoLists = [PageDatas pageDatasWithJSON:resultDict parserClass:[New class]];
         NSLog(@"%@",result);
-        [self.tableView.infiniteScrollingView stopAnimating];
-        [self.tableView reloadData];
-        self.tableView.infiniteScrollingView.enabled = self.videoLists.more;
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+            [self.collectionView reloadData];
+            
+        }else{
+            [self.tableView.infiniteScrollingView stopAnimating];
+            [self.tableView reloadData];
+            self.tableView.infiniteScrollingView.enabled = self.videoLists.more;
+        }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",error);
         [self.tableView.infiniteScrollingView stopAnimating];
@@ -257,9 +263,14 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
         self.videoLists = [PageDatas pageDatasWithJSON:resultDict parserClass:[New class]];
         NSLog(@"%@",result);
         
-        [self.tableView.infiniteScrollingView stopAnimating];
-        [self.tableView reloadData];
-        self.tableView.infiniteScrollingView.enabled = self.videoLists.more;
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+            [self.collectionView reloadData];
+            
+        }else{
+            [self.tableView.infiniteScrollingView stopAnimating];
+            [self.tableView reloadData];
+            self.tableView.infiniteScrollingView.enabled = self.videoLists.more;
+        }
 
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",error);
@@ -289,9 +300,10 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
 #pragma mark -Action
 - (IBAction)select:(id)sender
 {
-    _pickerViewPopup = [[UIActionSheet alloc] initWithTitle:nil delegate:nil cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil];
+    UIView *master = UIView.new;
+    master.frame = CGRectMake(0, 0, 320, 464);
     
-    _pickerView = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 44, 0, 0)];
+    self.pickerView = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 44, 0, 0)];
     _pickerView.datePickerMode = UIDatePickerModeDate;
     _pickerView.hidden = NO;
     [_pickerView setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"]];
@@ -314,14 +326,37 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
     
     [pickerToolbar setItems:barItems animated:YES];
     
-    [_pickerViewPopup addSubview:pickerToolbar];
-    [_pickerViewPopup addSubview:_pickerView];
-    [_pickerViewPopup showInView:self.view];
-    [_pickerViewPopup setBounds:CGRectMake(0,0,320, 464)];
+    [master addSubview:pickerToolbar];
+    [master addSubview:_pickerView];
+    
+    if (IS_IPAD) {
+        master.frame = CGRectMake(0, 0, 320, 270);
+        pickerToolbar.frame = CGRectMake(0, 0, 320, 44);
+        UIViewController *viewController = [[UIViewController alloc] initWithNibName:nil bundle:nil];
+        viewController.view = master;
+        viewController.contentSizeForViewInPopover = viewController.view.frame.size;
+        self.popOverController = [[UIPopoverController alloc] initWithContentViewController:viewController];
+        [_popOverController presentPopoverFromRect:self.dateButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    }else{
+        self.pickerViewPopup = [[UIActionSheet alloc] initWithTitle:nil delegate:nil cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil];
+        [_pickerViewPopup addSubview:master];
+        [_pickerViewPopup showInView:self.view];
+        [_pickerViewPopup setBounds:CGRectMake(0,0,320, 464)];
+
+    }
+}
+
+- (void)dismissPicker
+{
+    if (IS_IPAD) {
+        [_popOverController dismissPopoverAnimated:YES];
+    }else{
+        [_pickerViewPopup dismissWithClickedButtonIndex:1 animated:YES];
+    }
 }
 
 - (void)doneButtonPressed{
-    [_pickerViewPopup dismissWithClickedButtonIndex:1 animated:YES];
+    [self dismissPicker];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     NSDate *date = _pickerView.date;
     [formatter setDateFormat:@"yyyy-MM-dd"];
@@ -331,7 +366,7 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
 
 
 - (void)cancelButtonPressed{
-    [_pickerViewPopup dismissWithClickedButtonIndex:1 animated:YES];
+    [self dismissPicker];
     [self.dateButton setTitle:@"选择时间" forState:UIControlStateNormal];
 }
 
