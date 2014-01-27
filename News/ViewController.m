@@ -189,7 +189,7 @@ static NSString *VideoListPageSize = @"30";
     [self requestSearchTitle:@"" date:@"选择时间" page:self.videoLists.page+1];
 }
 
-- (void)requestSearchTitle:(NSString *)title date:(NSString *)date page:(int)page
+- (void)requestSearchTitle:(NSString *)title date:(NSString *)date page:(NSInteger)page
 {
     _isSearch = YES;
     NSString *da = date;
