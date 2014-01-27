@@ -20,7 +20,7 @@
             </objects>
             <point key="canvasLocation" x="-1729" y="-309"/>
         </scene>
-        <!--View Controller - 新闻频道-->
+        <!--View Controller - 郴州新闻联播-->
         <scene sceneID="tC7-7L-RMq">
             <objects>
                 <viewController id="SJg-gt-Tvg" customClass="ViewController" sceneMemberID="viewController">
@@ -152,7 +152,7 @@
                             <constraint firstItem="iiH-yt-MgC" firstAttribute="trailing" secondItem="Oc9-4Z-EFL" secondAttribute="trailing" id="yKW-0e-Juw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="新闻频道" id="6Rs-w3-MqH"/>
+                    <navigationItem key="navigationItem" title="郴州新闻联播" id="6Rs-w3-MqH"/>
                     <connections>
                         <outlet property="collectionView" destination="Oc9-4Z-EFL" id="gdM-A1-dui"/>
                         <outlet property="dateButton" destination="eKq-K7-wBM" id="YpK-4i-TT5"/>

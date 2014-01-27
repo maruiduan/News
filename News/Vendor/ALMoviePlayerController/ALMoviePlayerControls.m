@@ -13,6 +13,9 @@
 #import <tgmath.h>
 #import <QuartzCore/QuartzCore.h>
 
+#define M_BAR_COLOR [UIColor colorWithRed:0.458 green:0.748 blue:0.869 alpha:1.000]
+
+
 @implementation UIDevice (ALSystemVersion)
 
 + (float)iOSVersion {
@@ -88,7 +91,6 @@ static const CGFloat iPhoneScreenPortraitWidth = 320.f;
         
         _seekRate = 3.f;
         _state = ALMoviePlayerControlsStateIdle;
-        
         [self setup];
         [self addNotifications];
     }
@@ -729,7 +731,7 @@ static const CGFloat iPhoneScreenPortraitWidth = 320.f;
 
 - (void)drawRect:(CGRect)rect {
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, [_color CGColor]);
+    CGContextSetFillColorWithColor(context, [M_BAR_COLOR CGColor]);
     CGContextFillRect(context, rect);
 }
 

@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller - 新闻频道-->
+        <!--View Controller - 郴州新闻联播-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -123,7 +123,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" title="新闻频道" id="nRK-8b-g0M"/>
+                    <navigationItem key="navigationItem" title="郴州新闻联播" id="nRK-8b-g0M"/>
                     <connections>
                         <outlet property="dateButton" destination="GJg-av-DkJ" id="TBO-zb-Dsq"/>
                         <outlet property="mainView" destination="rXC-cZ-kzy" id="9s1-I7-KHY"/>
