@@ -27,12 +27,16 @@
 @property (nonatomic, strong) UIDatePicker *pickerView;
 @property (nonatomic, strong) UIPopoverController *popOverController;
 
+@property (nonatomic, strong) NSString *storeTitle;
+@property (nonatomic, strong) NSString *storeTime;
+
 @property (nonatomic) BOOL isSearch;
 
 @end
 
 static NSString *NewTableCellIdentifier = @"NewTableCell";
 static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
+static NSString *VideoListPageSize = @"30";
 
 
 @implementation ViewController
@@ -74,16 +78,18 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
     
     
     [self requestMainData];
-    [self requestVideoList];
+    [self requestSearchTitle:@"" date:@"" page:1];
     
-//    __block ViewController *weak = self;
-//    [self.tableView addPullToRefreshWithActionHandler:^{
-//        [weak requestVideoList];
-//    }];
+    __block ViewController *weak = self;
     
-//    [self.tableView addInfiniteScrollingWithActionHandler:^{
-//        [weak requestMoreVideoList];
-//    }];
+    UIScrollView *scrollView = IS_IPAD ? self.collectionView : self.tableView;
+    
+    [scrollView addInfiniteScrollingWithActionHandler:^{
+        if (weak.videoLists.more) {
+            [weak requestMoreData];
+        }
+    }];
+    self.tableView.infiniteScrollingView.enabled = NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -94,9 +100,6 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
 
 - (void)pushDetailController:(UIButton *)button
 {
-//    NewDetailController *newController = NewDetailController.new;
-//    newController.news = self.mainLists.data[button.tag];
-//    [self.navigationController pushViewController:newController animated:YES];
     [self performSegueWithIdentifier:@"NewDetailController" sender:self.mainLists.data[button.tag]];
 }
 
@@ -115,10 +118,6 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
 }
 
 #pragma mark - UITableViewDelegate
-
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    return [NewTableCell heightForCellWithPost:[_posts objectAtIndex:indexPath.row]];
-//}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -184,63 +183,10 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
     
 }
 
-- (void)requestVideoList
+
+- (void)requestMoreData
 {
-    _isSearch = NO;
-    NSDictionary *parametre = @{@"requestcommand":@"video_list",
-                                @"pagesize":@"30",
-                                @"pagenumber":@(0)};
-    [[HTTPClient sharedClient] postParameters:parametre success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSString *result = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-        NSDictionary *resultDict = [result JSONDictionary];
-        
-        self.videoLists = [PageDatas pageDatasWithJSON:resultDict parserClass:[New class]];
-        NSLog(@"%@",result);
-
-        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-            [self.collectionView reloadData];
-
-        }else{
-            [self.tableView.infiniteScrollingView stopAnimating];
-            [self.tableView reloadData];
-            self.tableView.infiniteScrollingView.enabled = self.videoLists.more;
-        }
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@",error);
-        [self.tableView.pullToRefreshView stopAnimating];
-    }];
-}
-
-- (void)requestMoreVideoList
-{
-    NSInteger page = 1;
-    if (self.videoLists.more) {
-        page = self.videoLists.page + 1;
-    }else{
-        return;
-    }
-    NSDictionary *parametre = @{@"requestcommand":@"video_list",
-                                @"pagesize":@"30",
-                                @"pagenumber":@(page)};
-    [[HTTPClient sharedClient] postParameters:parametre success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSString *result = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-        NSDictionary *resultDict = [result JSONDictionary];
-        
-        self.videoLists = [PageDatas pageDatasWithJSON:resultDict parserClass:[New class]];
-        NSLog(@"%@",result);
-        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-            [self.collectionView reloadData];
-            
-        }else{
-            [self.tableView.infiniteScrollingView stopAnimating];
-            [self.tableView reloadData];
-            self.tableView.infiniteScrollingView.enabled = self.videoLists.more;
-        }
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@",error);
-        [self.tableView.infiniteScrollingView stopAnimating];
-
-    }];
+    [self requestSearchTitle:@"" date:@"选择时间" page:self.videoLists.page+1];
 }
 
 - (void)requestSearchTitle:(NSString *)title date:(NSString *)date page:(int)page
@@ -252,31 +198,49 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
     }
     
     NSDictionary *parametre = [NSMutableDictionary dictionaryWithDictionary:@{@"requestcommand":@"video_list",
-                                                                              @"pagesize":@"30",
+                                                                              @"pagesize":VideoListPageSize,
                                                                               @"pagenumber":@(page)}];
-    if ([title length]) {
-        [parametre setValue:title forKey:@"title"];
+    if (page == 1) {
+        self.storeTime = date;
+        self.storeTitle = title;
+        
+        if ([title length]) {
+            [parametre setValue:title forKey:@"title"];
+        }
+        if ([da length]) {
+            [parametre setValue:da forKey:@"times"];
+        }
+    }else{
+        [parametre setValue:self.storeTitle forKey:@"title"];
+        [parametre setValue:self.storeTime forKey:@"times"];
     }
-    if ([da length]) {
-        [parametre setValue:da forKey:@"times"];
-    }
-    
     
     [[HTTPClient sharedClient] postParameters:parametre success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSString *result = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSDictionary *resultDict = [result JSONDictionary];
         
-        self.videoLists = [PageDatas pageDatasWithJSON:resultDict parserClass:[New class]];
+        if (page == 1) {
+            self.videoLists = [PageDatas pageDatasWithJSON:resultDict parserClass:[New class]];
+        }else{
+            PageDatas *resultPage = [PageDatas pageDatasWithJSON:resultDict parserClass:[New class]];
+            [self.videoLists.data addObjectsFromArray:resultPage.data];
+            self.videoLists.more = resultPage.more;
+            self.videoLists.page = resultPage.page;
+        }
+        
         NSLog(@"%@",result);
         
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
             [self.collectionView reloadData];
             
         }else{
-            [self.tableView.infiniteScrollingView stopAnimating];
             [self.tableView reloadData];
-            self.tableView.infiniteScrollingView.enabled = self.videoLists.more;
         }
+        
+        UIScrollView *scrollView = IS_IPAD ? self.collectionView : self.tableView;
+        [scrollView.infiniteScrollingView stopAnimating];
+        scrollView.infiniteScrollingView.enabled = self.videoLists.more;
+
 
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",error);
@@ -294,14 +258,12 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
         int page = scrollView.contentOffset.x/scrollView.frame.size.width;
         _pageControl.currentPage = page;
     }
-
 }
 
 #pragma mark -UITextField
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [self requestSearchTitle:textField.text date:self.dateButton.titleLabel.text page:1];
-
     [textField resignFirstResponder];
     return YES;
 }
@@ -403,10 +365,11 @@ static NSString *NewCollectionCellIdentifier = @"NewCollectionCell";
 {
     [[self.mainView subviews] enumerateObjectsUsingBlock:^(UIButton *button, NSUInteger idx, BOOL *stop) {
         if ([button isKindOfClass:[UIButton class]]) {
-            CGRect rect = CGRectMake(0, 0, 768, 242);
+            CGFloat height = 237;
+            CGRect rect = CGRectMake(0, 0, 768, height);
             rect.origin.x = CGRectGetWidth(self.mainView.frame) * idx;
             button.frame = rect;
-            self.mainView.contentSize = CGSizeMake(768*(idx+1),242);
+            self.mainView.contentSize = CGSizeMake(768*(idx+1),height);
             rect = self.mainView.frame;
             rect.size.width = 768;
             self.mainView.frame = rect;

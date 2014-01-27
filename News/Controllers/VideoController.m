@@ -43,6 +43,7 @@
 {
     [self.moviePlayer stop];
     self.moviePlayer.delegate = nil;
+    self.moviePlayer = nil;
     [super popBack];
 }
 

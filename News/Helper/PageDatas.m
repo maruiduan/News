@@ -10,12 +10,8 @@
 
 @interface PageDatas()
 
-@property (nonatomic) NSInteger page;
 @property (nonatomic) NSInteger total;
 @property (nonatomic) NSInteger totalPage;
-
-@property (nonatomic) BOOL more;
-@property (nonatomic, strong) NSArray *data;
 
 @end
 
