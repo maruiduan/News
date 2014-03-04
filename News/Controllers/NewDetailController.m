@@ -29,6 +29,7 @@
 {
     [super viewDidLoad];
     [self setNews:_news];
+    _newsImageView.imageView.contentMode = UIViewContentModeScaleAspectFit;
 }
 
 - (void)setNews:(New *)news
@@ -41,6 +42,7 @@
     __block NewDetailController *weak = self;
     [self.newsImageView setImageWithURL:[NSURL URLWithString:news.pickurl] success:^(UIImage *image, BOOL cached) {
         weak.newsImageView.imageView.image = image;
+        [weak.newsImageView setBackgroundImage:nil forState:UIControlStateNormal];
     } failure:^(NSError *error) {
         
     }];
