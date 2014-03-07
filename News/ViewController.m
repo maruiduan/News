@@ -169,13 +169,16 @@ static NSString *VideoListPageSize = @"30";
                 self.mainView.contentSize = CGSizeMake(CGRectGetWidth(self.mainView.frame)*(idx+1), CGRectGetHeight(self.mainView.frame));
                 [self.mainView addSubview:button];
                 button.tag = idx;
+                button.imageView.contentMode = UIViewContentModeScaleAspectFit;
+
                 [button addTarget:self action:@selector(pushDetailController:) forControlEvents:UIControlEventTouchUpInside];
             }];
             
             if (self.interfaceOrientation == UIDeviceOrientationPortrait || self.interfaceOrientation == UIDeviceOrientationPortraitUpsideDown) {
                 self.pageControl.hidden = NO;
             }
-        }        
+            self.pageControl.numberOfPages = [self.mainLists.data count];
+        }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",error);
         

@@ -10,7 +10,7 @@
 #import "AFJSONRequestOperation.h"
 #import "NSDictionary+JSON.h"
 
-static NSString * const kAFAppJAVAAPIBaseURLString = @"http://61.187.200.222:8100";
+static NSString * const kAFAppJAVAAPIBaseURLString = @"http://61.187.200.220:8100";
 
 //static NSString * const kAFAppJAVAAPIBaseURLString = @"http://test.12326.com:8100";
 
