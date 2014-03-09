@@ -76,6 +76,10 @@ static NSString *VideoListPageSize = @"30";
     _pageControl.frame = frame;
     _pageControl.hidden = YES;
     
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"banner.jpg"]];
+    imageView.frame = CGRectMake(0, 0, self.mainView.frame.size.width, self.mainView.frame.size.height);
+    [self.mainView addSubview:imageView];
+    
     
     [self requestMainData];
     [self requestSearchTitle:@"" date:@"" page:1];
@@ -156,17 +160,19 @@ static NSString *VideoListPageSize = @"30";
         
         if ([self.mainLists.data count]) {
             [[self.mainView subviews] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-                [obj removeFromSuperview];
+                if ([obj isKindOfClass:[UIButton class]]) {
+                    [obj removeFromSuperview];
+                }
             }];
             
             [self.mainLists.data enumerateObjectsUsingBlock:^(New *news, NSUInteger idx, BOOL *stop) {
                 UIButton *button = UIButton.new;
                 [button setImageWithURL:[NSURL URLWithString:news.pickurl]];
                 CGRect rect = self.mainView.frame;
-                rect.origin.x = CGRectGetWidth(self.mainView.frame) * idx;
+                rect.origin.x = CGRectGetWidth(self.mainView.frame) * (idx+1);
                 rect.origin.y = 0;
                 button.frame = rect;
-                self.mainView.contentSize = CGSizeMake(CGRectGetWidth(self.mainView.frame)*(idx+1), CGRectGetHeight(self.mainView.frame));
+                self.mainView.contentSize = CGSizeMake(CGRectGetWidth(self.mainView.frame)*(idx+2), CGRectGetHeight(self.mainView.frame));
                 [self.mainView addSubview:button];
                 button.tag = idx;
                 button.imageView.contentMode = UIViewContentModeScaleAspectFit;
@@ -177,7 +183,7 @@ static NSString *VideoListPageSize = @"30";
             if (self.interfaceOrientation == UIDeviceOrientationPortrait || self.interfaceOrientation == UIDeviceOrientationPortraitUpsideDown) {
                 self.pageControl.hidden = NO;
             }
-            self.pageControl.numberOfPages = [self.mainLists.data count];
+            self.pageControl.numberOfPages = [self.mainLists.data count]+1;
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",error);

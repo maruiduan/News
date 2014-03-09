@@ -239,9 +239,6 @@
     <resources>
         <image name="arrow_down.png" width="8" height="4"/>
         <image name="bg_5.jpg" width="640" height="1136"/>
-        <image name="bg_5.jpg" width="640" height="1136"/>
-        <image name="bg_5.jpg" width="640" height="1136"/>
-        <image name="img_bg.png" width="156" height="106"/>
         <image name="img_bg.png" width="156" height="106"/>
         <image name="line.png" width="613" height="2"/>
         <image name="moviePlay.png" width="20" height="24"/>

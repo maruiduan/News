@@ -36,7 +36,7 @@
 {
     _news = news;
     self.newsTitle.text = news.title;
-    self.newsSubTitle.text = news.synopsis;
+    self.newsSubTitle.text = [NSString stringWithFormat:@"%@ %@",news.author, news.addtime];
     self.newsDetail.text = news.contents;
     
     __block NewDetailController *weak = self;
