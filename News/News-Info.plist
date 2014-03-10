@@ -8,6 +8,16 @@
 	<string>郴州新闻联播</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Icon</string>
+		<string>Icon@2x</string>
+		<string>Icon-72</string>
+		<string>Icon-76</string>
+		<string>Icon-120</string>
+		<string>Icon-144</string>
+		<string>Icon-152</string>
+	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.mariox.bznews</string>
 	<key>CFBundleInfoDictionaryVersion</key>
