@@ -37,8 +37,9 @@
     _news = news;
     self.newsTitle.text = news.title;
     self.newsSubTitle.text = [NSString stringWithFormat:@"%@ %@",news.author, news.addtime];
-    self.newsDetail.text = news.contents;
-    
+    [self.newsDetail loadHTMLString:news.contents baseURL:nil];
+    [self.newsDetail  setBackgroundColor:[UIColor clearColor]];
+    [self.newsDetail  setOpaque:NO];
     __block NewDetailController *weak = self;
     [self.newsImageView setImageWithURL:[NSURL URLWithString:news.pickurl] success:^(UIImage *image, BOOL cached) {
         weak.newsImageView.imageView.image = image;

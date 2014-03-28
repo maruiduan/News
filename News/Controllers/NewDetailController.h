@@ -14,7 +14,7 @@
 @property (nonatomic, strong) New *news;
 @property (nonatomic, strong) IBOutlet UILabel *newsTitle;
 @property (nonatomic, strong) IBOutlet UILabel *newsSubTitle;
-@property (nonatomic, strong) IBOutlet UITextView *newsDetail;
+@property (nonatomic, strong) IBOutlet UIWebView *newsDetail;
 @property (nonatomic, strong) IBOutlet UIButton *newsImageView;
 
 
