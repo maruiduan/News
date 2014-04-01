@@ -176,18 +176,18 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg_5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Qlj-rZ-UQs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Qlj-rZ-UQs">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fs5-co-oMj">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fs5-co-oMj">
                                 <rect key="frame" x="47" y="36" width="674" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="674" translatesAutoresizingMaskIntoConstraints="NO" id="v69-qd-K7v">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="674" translatesAutoresizingMaskIntoConstraints="NO" id="v69-qd-K7v">
                                 <rect key="frame" x="47" y="96" width="674" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -197,7 +197,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frf-7L-Qza">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frf-7L-Qza">
                                 <rect key="frame" x="47" y="218" width="674" height="294"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -212,7 +212,7 @@
                                     <segue destination="tDQ-uu-UAk" kind="push" identifier="VideoController" id="ql1-OB-cxt"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zkv-7Q-3Vn">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zkv-7Q-3Vn">
                                 <rect key="frame" x="47" y="550" width="674" height="368"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -224,11 +224,19 @@
                             <constraint firstItem="Qlj-rZ-UQs" firstAttribute="top" secondItem="90w-Ve-CV5" secondAttribute="top" id="6E2-vc-l0m"/>
                             <constraint firstAttribute="bottom" secondItem="Qlj-rZ-UQs" secondAttribute="bottom" id="7Qc-BF-33t"/>
                             <constraint firstItem="Frf-7L-Qza" firstAttribute="leading" secondItem="v69-qd-K7v" secondAttribute="leading" id="C4y-MG-GIR"/>
+                            <constraint firstItem="fs5-co-oMj" firstAttribute="leading" secondItem="zkv-7Q-3Vn" secondAttribute="leading" id="FKT-8T-MTc"/>
+                            <constraint firstItem="fs5-co-oMj" firstAttribute="centerX" secondItem="90w-Ve-CV5" secondAttribute="centerX" id="HMS-1V-kUT"/>
                             <constraint firstItem="Frf-7L-Qza" firstAttribute="top" secondItem="v69-qd-K7v" secondAttribute="bottom" constant="22" id="PEJ-Ye-Qmo"/>
+                            <constraint firstItem="zkv-7Q-3Vn" firstAttribute="top" secondItem="Frf-7L-Qza" secondAttribute="bottom" constant="38" id="PYE-Qq-14K"/>
                             <constraint firstItem="Frf-7L-Qza" firstAttribute="centerX" secondItem="Qlj-rZ-UQs" secondAttribute="centerX" id="PzA-cY-sge"/>
-                            <constraint firstItem="Frf-7L-Qza" firstAttribute="trailing" secondItem="fs5-co-oMj" secondAttribute="trailing" id="e3y-FF-L6F"/>
-                            <constraint firstItem="fs5-co-oMj" firstAttribute="top" secondItem="IAd-0k-kvm" secondAttribute="bottom" constant="36" id="oZI-z1-ftC"/>
-                            <constraint firstItem="v69-qd-K7v" firstAttribute="top" secondItem="fs5-co-oMj" secondAttribute="bottom" constant="16" id="sK4-bP-WwL"/>
+                            <constraint firstItem="fs5-co-oMj" firstAttribute="trailing" secondItem="Frf-7L-Qza" secondAttribute="trailing" id="TnS-Ea-aUQ"/>
+                            <constraint firstItem="fs5-co-oMj" firstAttribute="leading" secondItem="90w-Ve-CV5" secondAttribute="leading" constant="47" id="YeL-sV-Wax"/>
+                            <constraint firstItem="PH4-kn-3bS" firstAttribute="top" secondItem="zkv-7Q-3Vn" secondAttribute="bottom" constant="42" id="gnX-zB-vVK"/>
+                            <constraint firstItem="v69-qd-K7v" firstAttribute="top" secondItem="fs5-co-oMj" secondAttribute="bottom" constant="16" id="gy2-Vp-whc"/>
+                            <constraint firstItem="fs5-co-oMj" firstAttribute="top" secondItem="IAd-0k-kvm" secondAttribute="bottom" constant="36" id="hvB-7b-LlR"/>
+                            <constraint firstItem="fs5-co-oMj" firstAttribute="trailing" secondItem="v69-qd-K7v" secondAttribute="trailing" id="rOL-4a-GhY"/>
+                            <constraint firstItem="fs5-co-oMj" firstAttribute="leading" secondItem="v69-qd-K7v" secondAttribute="leading" id="uOO-eA-oPU"/>
+                            <constraint firstItem="fs5-co-oMj" firstAttribute="trailing" secondItem="zkv-7Q-3Vn" secondAttribute="trailing" id="wkl-o4-DKu"/>
                             <constraint firstItem="v69-qd-K7v" firstAttribute="top" secondItem="90w-Ve-CV5" secondAttribute="top" constant="96" id="y4X-4o-RF3"/>
                         </constraints>
                     </view>
